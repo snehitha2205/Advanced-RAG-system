@@ -31,6 +31,11 @@ services:
       - ARANGO_USERNAME=root
       - ARANGO_PASSWORD=password
       - GEMINI_API_KEY=${GEMINI_API_KEY}
+      # Neo4j Aura — Permanent Knowledge Graph
+      - NEO4J_URI=${NEO4J_URI}
+      - NEO4J_USERNAME=${NEO4J_USERNAME}
+      - NEO4J_PASSWORD=${NEO4J_PASSWORD}
+      - NEO4J_DATABASE=${NEO4J_DATABASE}
     volumes:
       - ./backend/uploads:/app/uploads
       - ./backend/chroma_db:/app/chroma_db

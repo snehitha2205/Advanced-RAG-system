@@ -12,6 +12,8 @@ from knowledge_graph import KnowledgeGraph
 from hybrid_retriever import HybridRetriever
 from conversation_manager import ConversationManager
 from llm_handler import LLMHandler
+from critic_pipeline import CriticPipeline
+from extraction_debugger import ExtractionDebugger
 from config import Config
 
 # Initialize Flask app
@@ -31,10 +33,14 @@ print("Initializing system components...")
 doc_processor = DocumentProcessor()
 vector_store = VectorStore()
 knowledge_graph = KnowledgeGraph()
+extraction_debugger = ExtractionDebugger()
 hybrid_retriever = HybridRetriever(vector_store, knowledge_graph)
 conv_manager = ConversationManager()
 llm_handler = LLMHandler()
-print("System initialized successfully!")
+critic_pipeline = CriticPipeline(hybrid_retriever, llm_handler, conv_manager)
+print("System & Critic Pipeline initialized successfully!")
+
+
 
 @app.route('/health', methods=['GET'])
 def health_check():
@@ -83,15 +89,49 @@ def upload_document():
         print(f"Adding {len(processed_doc['chunks'])} chunks to vector store...")
         vector_store.add_documents(processed_doc['chunks'])
         
-        # Add to knowledge graph
-        print(f"Adding {len(processed_doc['entities'])} entities and {len(processed_doc['relationships'])} relationships to graph...")
-        for entity in processed_doc['entities']:
-            knowledge_graph.add_entity(entity)
+        # ── PERSISTENT STORAGE: Neo4j Aura ─────────────────────────────
+        # Document & Chunk provenance
+        print("[NEO4J] Storing document provenance...")
+        knowledge_graph.add_document_provenance(processed_doc['document_id'], filename, processed_doc['chunks'])
+
+        # Batch store entities
+        print(f"[NEO4J] Storing {len(processed_doc['entities'])} entities...")
+        entity_count = knowledge_graph.add_entities_batch(processed_doc['entities'])
         
-        for relationship in processed_doc['relationships']:
-            knowledge_graph.add_relationship(relationship)
+        # Batch store relationships
+        print(f"[NEO4J] Storing {len(processed_doc['relationships'])} relationships...")
+        rel_count = knowledge_graph.add_relationships_batch(processed_doc['relationships'])
+        
+        # Verify persistence
+        print("[NEO4J] Verifying persistence...")
+        verification = knowledge_graph.verify_upload(
+            processed_doc['document_id'],
+            expected_entity_count=len(processed_doc['entities']),
+            expected_relationship_count=len(processed_doc['relationships']),
+        )
+        if verification["verified"]:
+            print(f"[NEO4J] ✓ Upload verified — {verification['entity_count']} entities, "
+                  f"{verification['relationship_count']} relationships permanently stored")
+        else:
+            print(f"[NEO4J WARN] Verification issues: {verification.get('errors', [])}")
         
         processing_time = time.time() - start_time
+        
+        # Save Debug Extractions Artifacts
+        graph_stats = knowledge_graph.get_graph_stats()
+        extraction_debugger.save(
+            filename=filename,
+            document_id=processed_doc['document_id'],
+            processing_time_seconds=processing_time,
+            text_length=processed_doc['text_length'],
+            chunks_created=len(processed_doc['chunks']),
+            entities=processed_doc['entities'],
+            relationships=processed_doc['relationships'],
+            stats={},
+            neo4j_node_count=verification.get('entity_count', graph_stats.get('entity_count', 0)),
+            neo4j_relationship_count=verification.get('relationship_count', graph_stats.get('relationship_count', 0))
+        )
+
         
         # Clean up uploaded file (optional - keep for reference)
         # os.remove(file_path)
@@ -115,11 +155,12 @@ def upload_document():
 
 @app.route('/query', methods=['POST'])
 def query():
-    """Handle user query"""
+    """Handle user query through Agentic Critic Pipeline"""
     try:
-        data = request.json
+        data = request.json or {}
         query_text = data.get('query', '').strip()
         session_id = data.get('session_id')
+        thresholds = data.get('thresholds')
         
         if not query_text:
             return jsonify({"error": "No query provided"}), 400
@@ -128,48 +169,77 @@ def query():
         if not session_id:
             session_id = conv_manager.create_session()
         
-        print(f"Processing query: '{query_text[:50]}...' for session {session_id[:8]}")
-        start_time = time.time()
+        print(f"Processing Agentic Query: '{query_text[:50]}...' for session {session_id[:8]}")
         
         # Add user message to conversation
         conv_manager.add_message(session_id, "user", query_text)
         
-        # Get conversation history
-        history = conv_manager.get_conversation_history(session_id)
+        # Execute Critic Pipeline
+        pipeline_result = critic_pipeline.process_query(query_text, session_id, thresholds)
         
-        # Perform hybrid retrieval
-        print("Performing hybrid retrieval...")
-        retrieved_context = hybrid_retriever.retrieve(query_text, session_id)
-        
-        # Generate answer using Gemini
-        print(f"Generating answer with {len(retrieved_context)} context items...")
-        response = llm_handler.generate_answer(query_text, retrieved_context, history)
-        
-        # Add assistant response to conversation
+        # Add assistant response to conversation with full critic metadata
         conv_manager.add_message(
             session_id, 
             "assistant", 
-            response['answer'], 
+            pipeline_result['answer'], 
             metadata={
-                "sources": response['sources'],
-                "context_used": len(retrieved_context)
+                "sources": pipeline_result['sources'],
+                "critic_report": pipeline_result['critic_report'],
+                "metrics": pipeline_result['metrics'],
+                "correction_history": pipeline_result['correction_history']
             }
         )
         
-        query_time = time.time() - start_time
-        
-        return jsonify({
-            "session_id": session_id,
-            "answer": response['answer'],
-            "sources": response['sources'],
-            "context_used": len(retrieved_context),
-            "model": response['model'],
-            "query_time_seconds": round(query_time, 2)
-        }), 200
+        return jsonify(pipeline_result), 200
         
     except Exception as e:
         print(f"Error processing query: {traceback.format_exc()}")
         return jsonify({"error": f"Error processing query: {str(e)}"}), 500
+
+@app.route('/critic/settings', methods=['GET', 'POST'])
+def critic_settings():
+    """Get or update Critic Agent settings & thresholds"""
+    try:
+        if request.method == 'POST':
+            data = request.json or {}
+            if 'groundedness_threshold' in data:
+                Config.CRITIC_GROUNDEDNESS_THRESHOLD = float(data['groundedness_threshold'])
+            if 'faithfulness_threshold' in data:
+                Config.CRITIC_FAITHFULNESS_THRESHOLD = float(data['faithfulness_threshold'])
+            if 'confidence_threshold' in data:
+                Config.CRITIC_CONFIDENCE_THRESHOLD = float(data['confidence_threshold'])
+            if 'max_retries' in data:
+                Config.CRITIC_MAX_RETRIES = int(data['max_retries'])
+            
+            return jsonify({
+                "message": "Critic settings updated successfully",
+                "settings": {
+                    "groundedness_threshold": Config.CRITIC_GROUNDEDNESS_THRESHOLD,
+                    "faithfulness_threshold": Config.CRITIC_FAITHFULNESS_THRESHOLD,
+                    "confidence_threshold": Config.CRITIC_CONFIDENCE_THRESHOLD,
+                    "max_retries": Config.CRITIC_MAX_RETRIES
+                }
+            }), 200
+
+        return jsonify({
+            "groundedness_threshold": Config.CRITIC_GROUNDEDNESS_THRESHOLD,
+            "faithfulness_threshold": Config.CRITIC_FAITHFULNESS_THRESHOLD,
+            "confidence_threshold": Config.CRITIC_CONFIDENCE_THRESHOLD,
+            "max_retries": Config.CRITIC_MAX_RETRIES
+        }), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/critic/logs', methods=['GET'])
+def critic_logs():
+    """Get stored critic evaluation logs"""
+    try:
+        limit = request.args.get('limit', 20, type=int)
+        logs = critic_pipeline.logger.get_logs(limit=limit)
+        return jsonify({"logs": logs, "count": len(logs)}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 
 @app.route('/session/new', methods=['POST'])
 def new_session():
@@ -290,14 +360,151 @@ def system_stats():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+# ═══════════════════════════════════════════════════════════════════════════
+# KNOWLEDGE EXPLORER API ENDPOINTS
+# ═══════════════════════════════════════════════════════════════════════════
+
+@app.route('/api/graph/network', methods=['POST'])
+def get_graph_network():
+    """Get the full graph network (nodes + edges) for visualization."""
+    try:
+        data = request.json or {}
+        limit = data.get('limit', 200)
+        result = knowledge_graph.get_filtered_graph(data.get('filters', {}), limit=limit)
+        return jsonify(result), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/graph/entity/<entity_id>', methods=['GET'])
+def get_entity(entity_id):
+    """Get a single entity by ID with full metadata."""
+    try:
+        entity = knowledge_graph.get_entity_by_id(entity_id)
+        if entity is None:
+            return jsonify({"error": "Entity not found"}), 404
+        return jsonify(entity), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/graph/entity/<entity_id>/relationships', methods=['GET'])
+def get_entity_relationships(entity_id):
+    """Get all relationships for a specific entity."""
+    try:
+        limit = request.args.get('limit', 50, type=int)
+        relationships = knowledge_graph.get_relationships_for_entity(entity_id, limit=limit)
+        return jsonify({"relationships": relationships, "count": len(relationships)}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/graph/expand', methods=['POST'])
+def expand_graph():
+    """Expand graph by fetching neighbors for given entity IDs."""
+    try:
+        data = request.json or {}
+        entity_ids = data.get('entity_ids', [])
+        hops = data.get('hops', 1)
+        if not entity_ids:
+            return jsonify({"error": "No entity IDs provided"}), 400
+        result = knowledge_graph.expand_neighbors(entity_ids, hops=hops)
+        return jsonify(result), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/graph/analytics', methods=['GET'])
+def get_graph_analytics():
+    """Get comprehensive graph analytics."""
+    try:
+        analytics = knowledge_graph.get_graph_analytics()
+        return jsonify(analytics), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/graph/autocomplete', methods=['POST'])
+def autocomplete_search():
+    """Fast autocomplete search for entity names."""
+    try:
+        data = request.json or {}
+        query = data.get('query', '').strip()
+        limit = data.get('limit', 10)
+        if not query:
+            return jsonify({"results": []}), 200
+        results = knowledge_graph.search_autocomplete(query, limit=limit)
+        return jsonify({"results": results, "count": len(results)}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/graph/search/relationships', methods=['POST'])
+def search_relationships():
+    """Search relationships by predicate or entity names."""
+    try:
+        data = request.json or {}
+        query = data.get('query', '').strip()
+        limit = data.get('limit', 20)
+        if not query:
+            return jsonify({"results": []}), 200
+        results = knowledge_graph.search_relationships(query, limit=limit)
+        return jsonify({"results": results, "count": len(results)}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/graph/path', methods=['POST'])
+def find_path():
+    """Find shortest path between two entities."""
+    try:
+        data = request.json or {}
+        source_id = data.get('source_id', '')
+        target_id = data.get('target_id', '')
+        max_hops = data.get('max_hops', 6)
+        if not source_id or not target_id:
+            return jsonify({"error": "Source and target IDs required"}), 400
+        result = knowledge_graph.find_path_between(source_id, target_id, max_hops=max_hops)
+        return jsonify(result), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/graph/entities', methods=['GET'])
+def get_all_entities():
+    """Get all entities with pagination."""
+    try:
+        limit = request.args.get('limit', 500, type=int)
+        entities = knowledge_graph.get_all_entities(limit=limit)
+        return jsonify({"entities": entities, "count": len(entities)}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/graph/relationships', methods=['GET'])
+def get_all_relationships():
+    """Get all relationships with pagination."""
+    try:
+        limit = request.args.get('limit', 500, type=int)
+        relationships = knowledge_graph.get_all_relationships(limit=limit)
+        return jsonify({"relationships": relationships, "count": len(relationships)}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/graph/cypher', methods=['POST'])
+def execute_cypher():
+    """Execute a read-only Cypher query against Neo4j Aura."""
+    try:
+        data = request.json or {}
+        cypher = data.get('cypher', '').strip()
+        params = data.get('params', {})
+        if not cypher:
+            return jsonify({"error": "No Cypher query provided"}), 400
+        result = knowledge_graph.execute_cypher_query(cypher, params)
+        return jsonify(result), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 if __name__ == '__main__':
     print("\n" + "="*50)
     print("Advanced RAG System with Gemini API")
     print("="*50)
     print(f"LLM Model: {Config.GEMINI_MODEL}")
     print(f"Vector DB: ChromaDB")
-    print(f"Graph DB: ArangoDB")
+    print(f"Graph DB: Neo4j Aura (Permanent Knowledge Graph)")
     print(f"Server running at: http://localhost:5000")
     print("="*50 + "\n")
     
     app.run(debug=True, host='0.0.0.0', port=5000)
+

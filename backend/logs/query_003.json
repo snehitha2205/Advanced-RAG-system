@@ -1,0 +1,99 @@
+{
+  "log_id": "query_003",
+  "timestamp": "2026-07-26T16:55:54.622065",
+  "original_question": "hi",
+  "query_complexity": "Easy",
+  "initial_retrieval": {
+    "document_count": 3,
+    "sources": [
+      {
+        "filename": "Dundigela_Sai_Snehitha_Resume_.pdf",
+        "chunk_index": 0,
+        "relevance_score": 0.415,
+        "preview": "Dundigela Sai Snehitha dsaisnehitha2205@gmail.com +91 8919393161 Hyderabad, India snehitha2205 snehitha2205 Sai Snehitha Dundigela CAREER OBJECTIVE Aspiring AI and software engineer with a strong foun..."
+      },
+      {
+        "filename": "Dundigela_Sai_Snehitha_Resume_.pdf",
+        "chunk_index": 2,
+        "relevance_score": 0.408,
+        "preview": "se, Async Web Server •Hardware: ESP32, Seeed Studio XIAO ESP32, Microphone module ACHIEVEMENTS & ACTIVITIES SIH 2025 – Waitlisted for Smart India Hackathon, recognizing innovation and problem-solving...."
+      },
+      {
+        "filename": "CASE_STUDY_final.pdf",
+        "chunk_index": 19,
+        "relevance_score": 0.402,
+        "preview": "havior insights •Barcode integration for faster billing •Mobile application for managers on the go 16 Code Repository Structure The complete implementation is available in the accompanying repository...."
+      }
+    ]
+  },
+  "draft_answer": "I don't have enough information in the provided documents to answer this question accurately.",
+  "critic_scores": {
+    "groundedness": 1.0,
+    "faithfulness": 1.0,
+    "completeness": 1.0,
+    "relevance": 1.0,
+    "graph_consistency": 1.0,
+    "citation_quality": 1.0,
+    "confidence": 1.0,
+    "decision": "PASS",
+    "reason": "The user query is a simple greeting ('hi'), and the provided context consists of technical and resume-related information. The generated answer correctly states that it does not have enough information to answer the question accurately, which is a faithful and relevant response given the nature of the query and context.",
+    "missing_topics": [],
+    "suggested_queries": [],
+    "evaluation_time_seconds": 5.505
+  },
+  "correction_history": [
+    {
+      "step": "Draft Generated",
+      "attempt": 1,
+      "status": "Completed",
+      "description": "Initial draft generated using hybrid GraphRAG context."
+    },
+    {
+      "step": "Critic Passed",
+      "attempt": 1,
+      "status": "Fixed",
+      "description": "Answer passed critic evaluation on attempt 1 with confidence 1.00."
+    }
+  ],
+  "expanded_queries": [],
+  "final_answer": "I don't have enough information in the provided documents to answer this question accurately.",
+  "final_scores": {
+    "groundedness": 1.0,
+    "faithfulness": 1.0,
+    "completeness": 1.0,
+    "relevance": 1.0,
+    "graph_consistency": 1.0,
+    "citation_quality": 1.0,
+    "confidence": 1.0,
+    "decision": "PASS",
+    "reason": "The user query is a simple greeting ('hi'), and the provided context consists of technical and resume-related information. The generated answer correctly states that it does not have enough information to answer the question accurately, which is a faithful and relevant response given the nature of the query and context.",
+    "missing_topics": [],
+    "suggested_queries": [],
+    "evaluation_time_seconds": 5.505
+  },
+  "final_status": "Verified",
+  "retry_count": 0,
+  "processing_times": {
+    "retrieval_time": 0.51,
+    "generation_time": 2.97,
+    "critic_time": 5.51,
+    "total_time": 8.99
+  },
+  "metrics": {
+    "retrieval_time_seconds": 0.51,
+    "generation_time_seconds": 2.97,
+    "critic_time_seconds": 5.51,
+    "total_response_time_seconds": 8.99,
+    "documents_retrieved": 2,
+    "chunks_retrieved": 3,
+    "graph_entities_used": 0,
+    "relationships_traversed": 2,
+    "knowledge_graph_hops": 2,
+    "context_tokens": 346,
+    "prompt_tokens": 348,
+    "completion_tokens": 19,
+    "query_complexity": "Easy",
+    "retrieval_quality_score": 0.5,
+    "retry_count": 0
+  }
+}

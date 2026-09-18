@@ -1,0 +1,92 @@
+{
+  "id": "67b97cf0-522a-4d17-8fd9-a1c3014ac7d1",
+  "created_at": "2026-07-26T16:30:10.415475",
+  "updated_at": "2026-07-26T16:30:24.473985",
+  "messages": [
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-07-26T16:30:10.418484",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "I don't have enough information in the provided documents to answer this question accurately. The documents provided are a resume and a case study, which do not contain conversational responses to a greeting like \"hi\".",
+      "timestamp": "2026-07-26T16:30:24.473985",
+      "metadata": {
+        "sources": [
+          {
+            "filename": "Dundigela_Sai_Snehitha_Resume_.pdf",
+            "chunk_index": 0,
+            "relevance_score": 0.415,
+            "preview": "Dundigela Sai Snehitha dsaisnehitha2205@gmail.com +91 8919393161 Hyderabad, India snehitha2205 snehitha2205 Sai Snehitha Dundigela CAREER OBJECTIVE Aspiring AI and software engineer with a strong foun..."
+          },
+          {
+            "filename": "Dundigela_Sai_Snehitha_Resume_.pdf",
+            "chunk_index": 2,
+            "relevance_score": 0.408,
+            "preview": "se, Async Web Server •Hardware: ESP32, Seeed Studio XIAO ESP32, Microphone module ACHIEVEMENTS & ACTIVITIES SIH 2025 – Waitlisted for Smart India Hackathon, recognizing innovation and problem-solving...."
+          },
+          {
+            "filename": "CASE_STUDY_final.pdf",
+            "chunk_index": 19,
+            "relevance_score": 0.402,
+            "preview": "havior insights •Barcode integration for faster billing •Mobile application for managers on the go 16 Code Repository Structure The complete implementation is available in the accompanying repository...."
+          }
+        ],
+        "critic_report": {
+          "groundedness": 0.88,
+          "faithfulness": 0.9,
+          "completeness": 0.85,
+          "relevance": 0.92,
+          "graph_consistency": 0.9,
+          "citation_quality": 0.85,
+          "confidence": 0.89,
+          "decision": "PASS",
+          "reason": "Standard verification completed (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))).",
+          "overall_quality_score": 89,
+          "final_status": "Verified"
+        },
+        "metrics": {
+          "retrieval_time_seconds": 0.45,
+          "generation_time_seconds": 2.3,
+          "critic_time_seconds": 11.3,
+          "total_response_time_seconds": 14.05,
+          "documents_retrieved": 2,
+          "chunks_retrieved": 3,
+          "graph_entities_used": 0,
+          "relationships_traversed": 2,
+          "knowledge_graph_hops": 2,
+          "context_tokens": 346,
+          "prompt_tokens": 348,
+          "completion_tokens": 46,
+          "query_complexity": "Easy",
+          "retrieval_quality_score": 0.5,
+          "retry_count": 0
+        },
+        "correction_history": [
+          {
+            "step": "Draft Generated",
+            "attempt": 1,
+            "status": "Completed",
+            "description": "Initial draft generated using hybrid GraphRAG context."
+          },
+          {
+            "step": "Critic Passed",
+            "attempt": 1,
+            "status": "Fixed",
+            "description": "Answer passed critic evaluation on attempt 1 with confidence 0.89."
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {},
+  "context": {
+    "last_query": "hi",
+    "last_answer": "I don't have enough information in the provided documents to answer this question accurately. The documents provided are a resume and a case study, which do not contain conversational responses to a greeting like \"hi\".",
+    "mentioned_entities": [],
+    "current_topic": null,
+    "document_references": []
+  }
+}

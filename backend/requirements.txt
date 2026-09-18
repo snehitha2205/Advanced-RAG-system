@@ -7,6 +7,17 @@ langchain==0.1.0
 requests==2.31.0
 python-arango==8.0.0
 PyPDF2==3.0.1
+# Upgraded spaCy — use en_core_web_lg for significantly better NER accuracy
+# Install model with: python -m spacy download en_core_web_lg
 spacy==3.7.2
+# Required by spaCy en_core_web_lg for word vectors
 numpy==1.24.3
 werkzeug==3.0.1
+# Fuzzy string matching for entity deduplication in EntityNormalizer
+# Used by: extraction/entity_normalizer.py (_fuzzy_merge_groups)
+# CPU-only, pure Python — no native deps required
+# Note: difflib (stdlib) is used as primary; rapidfuzz is optional for speed
+# rapidfuzz>=3.5.0
+
+# Neo4j Aura driver for permanent Knowledge Graph storage
+neo4j>=5.14.0

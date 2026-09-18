@@ -1,0 +1,941 @@
+{
+  "nodes": [
+    {
+      "id": "7302e61e220874089f64fa7674d72f3c",
+      "label": "Clinical Decision Support System - Proposed Extensions Base Paper:",
+      "type": "ORG",
+      "confidence": 0.85,
+      "frequency": 1
+    },
+    {
+      "id": "fc35d10d0d49d036e056dd9b7231279b",
+      "label": "LLM-Based Clinical Decision Support System Integrating Biomedical",
+      "type": "ORG",
+      "confidence": 0.85,
+      "frequency": 1
+    },
+    {
+      "id": "182952d90409ab4b45e2887531508c96",
+      "label": "Web Intelligence",
+      "type": "ORG",
+      "confidence": 0.85,
+      "frequency": 1
+    },
+    {
+      "id": "7785d6f7e2fca93d1ff9802d62ea4365",
+      "label": "IEEE Access",
+      "type": "ORG",
+      "confidence": 0.85,
+      "frequency": 1
+    },
+    {
+      "id": "fc8a20a074a42c5daa3c586c04d610cd",
+      "label": "Clarifier",
+      "type": "PERSON",
+      "confidence": 0.85,
+      "frequency": 2
+    },
+    {
+      "id": "1a1ced60fc631ab4d337a09118eed03d",
+      "label": "CT",
+      "type": "ORG",
+      "confidence": 0.85,
+      "frequency": 8
+    },
+    {
+      "id": "4b38336b5a49a7725f61c8cdaabb3fbc",
+      "label": "Pulmonologists",
+      "type": "NORP",
+      "confidence": 0.85,
+      "frequency": 1
+    },
+    {
+      "id": "af6fb46500690438938709eb50442d94",
+      "label": "Symptom RAG Analyzer",
+      "type": "PERSON",
+      "confidence": 0.85,
+      "frequency": 2
+    },
+    {
+      "id": "62b62b727de09329ac34467739e62ffe",
+      "label": "Personalized Treatment Planning 5",
+      "type": "ORG",
+      "confidence": 0.85,
+      "frequency": 1
+    },
+    {
+      "id": "0fa1d8051f2dfbfaf40f5d291867e377",
+      "label": "Healthcare",
+      "type": "ORG",
+      "confidence": 0.85,
+      "frequency": 1
+    },
+    {
+      "id": "2b7f752b88dd81c48152c14ebfe2fa45",
+      "label": "○ Diagrams/Images",
+      "type": "ORG",
+      "confidence": 0.85,
+      "frequency": 1
+    },
+    {
+      "id": "691ed1c895daf07880e03525ef1da3d4",
+      "label": "Large Language Model",
+      "type": "ORG",
+      "confidence": 0.85,
+      "frequency": 1
+    },
+    {
+      "id": "c1cc624dcd6f0de4135b505cb90f3f99",
+      "label": "GraphRAG",
+      "type": "GPE",
+      "confidence": 0.85,
+      "frequency": 9
+    },
+    {
+      "id": "072e3a739161caacd609b18d0961f628",
+      "label": "Dynamic GraphRAG Description",
+      "type": "PERSON",
+      "confidence": 0.85,
+      "frequency": 1
+    },
+    {
+      "id": "410466984be6a4d817486cc0a6d86f8a",
+      "label": "Naive",
+      "type": "ORG",
+      "confidence": 0.85,
+      "frequency": 2
+    },
+    {
+      "id": "730d5214f481cedd13181d55ab00b4cf",
+      "label": "○ Page",
+      "type": "PERSON",
+      "confidence": 0.85,
+      "frequency": 1
+    },
+    {
+      "id": "daf9f2d578a1650ce24cdfeef2dd9a4a",
+      "label": "○ Graph",
+      "type": "ORG",
+      "confidence": 0.85,
+      "frequency": 1
+    },
+    {
+      "id": "5ebfd7c52f3de9e3fcd5deb0f5807bf8",
+      "label": "○ Supporting",
+      "type": "ORG",
+      "confidence": 0.85,
+      "frequency": 1
+    },
+    {
+      "id": "f3b9b42be4d0c24b28038539d1dbeb69",
+      "label": "Chunk 145",
+      "type": "PRODUCT",
+      "confidence": 0.85,
+      "frequency": 1
+    },
+    {
+      "id": "2fa38a4a9569e9c0bde15833222d7bd8",
+      "label": "Motor Fault",
+      "type": "ORG",
+      "confidence": 0.85,
+      "frequency": 1
+    },
+    {
+      "id": "95a8f462c38e306158cb5982471f81d5",
+      "label": "Retrieval-Augmented Generation",
+      "type": "CONCEPT",
+      "confidence": 0.95,
+      "frequency": 1
+    },
+    {
+      "id": "89ce35971a919e299a2d9d5d6b7e70f8",
+      "label": "Large Language Model",
+      "type": "MODEL",
+      "confidence": 0.95,
+      "frequency": 1
+    },
+    {
+      "id": "f45c36b287e2adf1eb85a7ff19148e82",
+      "label": "Confidence score",
+      "type": "METRIC",
+      "confidence": 0.95,
+      "frequency": 1
+    },
+    {
+      "id": "6689f6d6c43259f6461a97ee68f08654",
+      "label": "Multimodal GraphRAG",
+      "type": "SYSTEM",
+      "confidence": 0.95,
+      "frequency": 1
+    },
+    {
+      "id": "2c4b681a035bcc766500ab95da3a50b4",
+      "label": "Multi-hop Reasoning",
+      "type": "CONCEPT",
+      "confidence": 0.95,
+      "frequency": 1
+    },
+    {
+      "id": "9ca59516542e8146e3371a961eef2584",
+      "label": "Dynamic GraphRAG",
+      "type": "SYSTEM",
+      "confidence": 0.95,
+      "frequency": 1
+    },
+    {
+      "id": "70813576fb6c0328499db94a89ff43ba",
+      "label": "Graph traversal",
+      "type": "CONCEPT",
+      "confidence": 0.95,
+      "frequency": 1
+    },
+    {
+      "id": "39a221737ecb191d70c42a4204bb7ddf",
+      "label": "Knowledge Graph",
+      "type": "CONCEPT",
+      "confidence": 0.95,
+      "frequency": 1
+    },
+    {
+      "id": "c9673c41479fc80604df20abb2158213",
+      "label": "Critic Agent",
+      "type": "COMPONENT",
+      "confidence": 0.95,
+      "frequency": 1
+    },
+    {
+      "id": "347547efd8f559f294e3d65f598e6063",
+      "label": "GraphRAG",
+      "type": "SYSTEM",
+      "confidence": 0.95,
+      "frequency": 1
+    },
+    {
+      "id": "331c51e21c9d9021f370c813efc7d28e",
+      "label": "chunk",
+      "type": "CONCEPT",
+      "confidence": 0.95,
+      "frequency": 1
+    },
+    {
+      "id": "db49b431d141eca26adeef2ad6a71420",
+      "label": "motor stopped because Current GraphRAG temperature exceeded the threshold, triggering the shutdown mechanism.",
+      "type": "PUBLICATION",
+      "confidence": 0.9,
+      "frequency": 1
+    },
+    {
+      "id": "cd14eea92f3b2f46655b7e244993ecfb",
+      "label": "Safety Explainable",
+      "type": "ORG",
+      "confidence": 0.85,
+      "frequency": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "1f26284648ffe94292ea54ae0b49f369",
+      "source_label": "Medical Image Analysis Agent",
+      "target": "ee66521fe6e65f300e3c1ea36d21ee08",
+      "target_label": "only symptoms",
+      "relationship": "USES",
+      "confidence": 0.7
+    },
+    {
+      "source": "1f26284648ffe94292ea54ae0b49f369",
+      "source_label": "Medical Image Analysis Agent",
+      "target": "d98e3ed4c699d998528bb2e1f6b70756",
+      "target_label": "clinical text",
+      "relationship": "USES",
+      "confidence": 0.7
+    },
+    {
+      "source": "485e16996f5220ad85e3c62f1117ec96",
+      "source_label": "Final Architecture Clinical Text Clarifier Agent Symptom RAG Analyzer Agent Evidence Based Scanner Agent Clinical Data Fusion Agent Adaptive Optimizer Agent Medical Image Analysis Agent Patient Risk Prediction Agent Specialist Recommendation Agent \n\n Personalized Treatment Pathway Agent Explainable Diagnosis Agent",
+      "target": "a3c19fe8a008ac975af30cf89064c448",
+      "target_label": "Contributions",
+      "relationship": "EXPECT",
+      "confidence": 0.7
+    },
+    {
+      "source": "7302e61e220874089f64fa7674d72f3c",
+      "source_label": "Clinical Decision Support System - Proposed Extensions Base Paper:",
+      "target": "182952d90409ab4b45e2887531508c96",
+      "target_label": "Web Intelligence",
+      "relationship": "BASED_IN",
+      "confidence": 0.65
+    },
+    {
+      "source": "7785d6f7e2fca93d1ff9802d62ea4365",
+      "source_label": "IEEE Access",
+      "target": "fc8a20a074a42c5daa3c586c04d610cd",
+      "target_label": "Clarifier",
+      "relationship": "PROPOSE",
+      "confidence": 0.55
+    },
+    {
+      "source": "7f00bbdb86a194d5bbb75c5c0f08ebf7",
+      "source_label": "Multimodal GraphRAG Problem",
+      "target": "ee3aefa2b502c2f68c895dd7ee917287",
+      "target_label": "information",
+      "relationship": "RETRIEVE",
+      "confidence": 0.72
+    },
+    {
+      "source": "74a2a653d4f711e7a341160b99a30a96",
+      "source_label": "Current GraphRAG",
+      "target": "ee3aefa2b502c2f68c895dd7ee917287",
+      "target_label": "information",
+      "relationship": "RETRIEVE",
+      "confidence": 0.72
+    },
+    {
+      "source": "35bfa48c523341248640b08f7d9fd80e",
+      "source_label": "Extension",
+      "target": "ee3aefa2b502c2f68c895dd7ee917287",
+      "target_label": "information",
+      "relationship": "EXTRACT",
+      "confidence": 0.7
+    },
+    {
+      "source": "c80521e87feb3c891e4500320321b443",
+      "source_label": "system",
+      "target": "ee3aefa2b502c2f68c895dd7ee917287",
+      "target_label": "information",
+      "relationship": "MERGED_WITH",
+      "confidence": 0.7
+    },
+    {
+      "source": "de2ef60ebe49050e4951f66a6392b7a3",
+      "source_label": "Shutdown temperature",
+      "target": "a6412d17a69d543770c2473436ff49c4",
+      "target_label": "threshold",
+      "relationship": "EXCEED",
+      "confidence": 0.7
+    },
+    {
+      "source": "8c3a720fcaabe8f6c903b5ab81137897",
+      "source_label": "2. Critic Agent (Self-Correcting GraphRAG) Problem",
+      "target": "ead90660d6cbe568ca3e97e0ac78c2a7",
+      "target_label": "hallucinations",
+      "relationship": "INCLUDES",
+      "confidence": 0.7
+    },
+    {
+      "source": "8c3a720fcaabe8f6c903b5ab81137897",
+      "source_label": "2. Critic Agent (Self-Correcting GraphRAG) Problem",
+      "target": "9eb1433d48d4aa3deceb6ddfe66aa5d8",
+      "target_label": "unsupported claims",
+      "relationship": "INCLUDES",
+      "confidence": 0.7
+    },
+    {
+      "source": "8c3a720fcaabe8f6c903b5ab81137897",
+      "source_label": "2. Critic Agent (Self-Correcting GraphRAG) Problem",
+      "target": "627fb5b61c0da206cf26a79ca97d04d2",
+      "target_label": "incomplete information",
+      "relationship": "INCLUDES",
+      "confidence": 0.7
+    },
+    {
+      "source": "43bc56ee6d6f04d8a7bb4f4de3c716ae",
+      "source_label": "LLM-generated answers",
+      "target": "ead90660d6cbe568ca3e97e0ac78c2a7",
+      "target_label": "hallucinations",
+      "relationship": "INCLUDES",
+      "confidence": 0.7
+    },
+    {
+      "source": "43bc56ee6d6f04d8a7bb4f4de3c716ae",
+      "source_label": "LLM-generated answers",
+      "target": "9eb1433d48d4aa3deceb6ddfe66aa5d8",
+      "target_label": "unsupported claims",
+      "relationship": "INCLUDES",
+      "confidence": 0.7
+    },
+    {
+      "source": "43bc56ee6d6f04d8a7bb4f4de3c716ae",
+      "source_label": "LLM-generated answers",
+      "target": "627fb5b61c0da206cf26a79ca97d04d2",
+      "target_label": "incomplete information",
+      "relationship": "INCLUDES",
+      "confidence": 0.7
+    },
+    {
+      "source": "fa1331ff210d64edc8ed0bc4ce725c1b",
+      "source_label": "Workflow Question ↓ GraphRAG ↓ Answer ↓ Critic Agent ↓ PASS",
+      "target": "b930804ddd7600bd0127f59211c5777d",
+      "target_label": "If FAIL retrieve additional evidence and regenerate response",
+      "relationship": "FAIL",
+      "confidence": 0.7
+    },
+    {
+      "source": "fa1331ff210d64edc8ed0bc4ce725c1b",
+      "source_label": "Workflow Question ↓ GraphRAG ↓ Answer ↓ Critic Agent ↓ PASS",
+      "target": "e031f03ee3ecaf98a98a9405564f910b",
+      "target_label": "regenerate response",
+      "relationship": "FAIL",
+      "confidence": 0.7
+    },
+    {
+      "source": "748f54dd83653171a57a43858b8a26f9",
+      "source_label": "using lightweight vector retrieval",
+      "target": "c298fccab94147d9b9c72a2fdef2926f",
+      "target_label": "Simple factual questions",
+      "relationship": "ANSWER",
+      "confidence": 0.7
+    },
+    {
+      "source": "a551b88f2da98e3880641a32387ad635",
+      "source_label": "This",
+      "target": "d0d0cc3207c09575f6b4a78aa9041f2b",
+      "target_label": "latency and computational cost",
+      "relationship": "REDUCE",
+      "confidence": 0.7
+    },
+    {
+      "source": "a551b88f2da98e3880641a32387ad635",
+      "source_label": "This",
+      "target": "66eb9ce468927b4581629b034e5559a0",
+      "target_label": "users",
+      "relationship": "ENABLES",
+      "confidence": 0.7
+    },
+    {
+      "source": "a551b88f2da98e3880641a32387ad635",
+      "source_label": "This",
+      "target": "803bbbc72f31c6c92ab33b8b4c146429",
+      "target_label": "to verify answer source and understand reasoning process",
+      "relationship": "ENABLES",
+      "confidence": 0.7
+    },
+    {
+      "source": "a551b88f2da98e3880641a32387ad635",
+      "source_label": "This",
+      "target": "7358407af19aef009d5b0fe57f6730e1",
+      "target_label": "understand reasoning process",
+      "relationship": "ENABLES",
+      "confidence": 0.7
+    },
+    {
+      "source": "072e3a739161caacd609b18d0961f628",
+      "source_label": "Dynamic GraphRAG Description",
+      "target": "410466984be6a4d817486cc0a6d86f8a",
+      "target_label": "Naive",
+      "relationship": "SELECT",
+      "confidence": 0.65
+    },
+    {
+      "source": "072e3a739161caacd609b18d0961f628",
+      "source_label": "Dynamic GraphRAG Description",
+      "target": "c1cc624dcd6f0de4135b505cb90f3f99",
+      "target_label": "GraphRAG",
+      "relationship": "SELECT",
+      "confidence": 0.65
+    },
+    {
+      "source": "7302e61e220874089f64fa7674d72f3c",
+      "source_label": "Clinical Decision Support System - Proposed Extensions Base Paper:",
+      "target": "2bbec9d6a6d50b9216ec98c9e15376d9",
+      "target_label": "LLM-Based Clinical Decision Support System Integrating Biomedical",
+      "relationship": "PROPOSES",
+      "confidence": 0.99
+    },
+    {
+      "source": "7302e61e220874089f64fa7674d72f3c",
+      "source_label": "Clinical Decision Support System - Proposed Extensions Base Paper:",
+      "target": "182952d90409ab4b45e2887531508c96",
+      "target_label": "Web Intelligence",
+      "relationship": "PROPOSES",
+      "confidence": 0.99
+    },
+    {
+      "source": "7302e61e220874089f64fa7674d72f3c",
+      "source_label": "Clinical Decision Support System - Proposed Extensions Base Paper:",
+      "target": "7785d6f7e2fca93d1ff9802d62ea4365",
+      "target_label": "IEEE Access",
+      "relationship": "PROPOSES",
+      "confidence": 0.99
+    },
+    {
+      "source": "2bbec9d6a6d50b9216ec98c9e15376d9",
+      "source_label": "LLM-Based Clinical Decision Support System Integrating Biomedical",
+      "target": "182952d90409ab4b45e2887531508c96",
+      "target_label": "Web Intelligence",
+      "relationship": "DEPENDS_ON",
+      "confidence": 0.99
+    },
+    {
+      "source": "2bbec9d6a6d50b9216ec98c9e15376d9",
+      "source_label": "LLM-Based Clinical Decision Support System Integrating Biomedical",
+      "target": "7785d6f7e2fca93d1ff9802d62ea4365",
+      "target_label": "IEEE Access",
+      "relationship": "DEPENDS_ON",
+      "confidence": 0.99
+    },
+    {
+      "source": "7302e61e220874089f64fa7674d72f3c",
+      "source_label": "Clinical Decision Support System - Proposed Extensions Base Paper:",
+      "target": "89ce35971a919e299a2d9d5d6b7e70f8",
+      "target_label": "Large Language Model",
+      "relationship": "PROPOSES",
+      "confidence": 0.98
+    },
+    {
+      "source": "182952d90409ab4b45e2887531508c96",
+      "source_label": "Web Intelligence",
+      "target": "7785d6f7e2fca93d1ff9802d62ea4365",
+      "target_label": "IEEE Access",
+      "relationship": "PROPOSES",
+      "confidence": 0.98
+    },
+    {
+      "source": "182952d90409ab4b45e2887531508c96",
+      "source_label": "Web Intelligence",
+      "target": "89ce35971a919e299a2d9d5d6b7e70f8",
+      "target_label": "Large Language Model",
+      "relationship": "PROPOSES",
+      "confidence": 0.98
+    },
+    {
+      "source": "7785d6f7e2fca93d1ff9802d62ea4365",
+      "source_label": "IEEE Access",
+      "target": "89ce35971a919e299a2d9d5d6b7e70f8",
+      "target_label": "Large Language Model",
+      "relationship": "PROPOSES",
+      "confidence": 0.98
+    },
+    {
+      "source": "fc8a20a074a42c5daa3c586c04d610cd",
+      "source_label": "Clarifier",
+      "target": "1a1ced60fc631ab4d337a09118eed03d",
+      "target_label": "CT",
+      "relationship": "DEPENDS_ON",
+      "confidence": 0.98
+    },
+    {
+      "source": "7302e61e220874089f64fa7674d72f3c",
+      "source_label": "Clinical Decision Support System - Proposed Extensions Base Paper:",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "PROPOSES",
+      "confidence": 0.88
+    },
+    {
+      "source": "182952d90409ab4b45e2887531508c96",
+      "source_label": "Web Intelligence",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "PROPOSES",
+      "confidence": 0.88
+    },
+    {
+      "source": "7785d6f7e2fca93d1ff9802d62ea4365",
+      "source_label": "IEEE Access",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "PROPOSES",
+      "confidence": 0.88
+    },
+    {
+      "source": "95a8f462c38e306158cb5982471f81d5",
+      "source_label": "Retrieval-Augmented Generation",
+      "target": "89ce35971a919e299a2d9d5d6b7e70f8",
+      "target_label": "Large Language Model",
+      "relationship": "PROPOSES",
+      "confidence": 0.88
+    },
+    {
+      "source": "fc8a20a074a42c5daa3c586c04d610cd",
+      "source_label": "Clarifier",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "DEPENDS_ON",
+      "confidence": 0.88
+    },
+    {
+      "source": "95a8f462c38e306158cb5982471f81d5",
+      "source_label": "Retrieval-Augmented Generation",
+      "target": "1a1ced60fc631ab4d337a09118eed03d",
+      "target_label": "CT",
+      "relationship": "DEPENDS_ON",
+      "confidence": 0.88
+    },
+    {
+      "source": "89ce35971a919e299a2d9d5d6b7e70f8",
+      "source_label": "Large Language Model",
+      "target": "fc8a20a074a42c5daa3c586c04d610cd",
+      "target_label": "Clarifier",
+      "relationship": "PROPOSES",
+      "confidence": 0.78
+    },
+    {
+      "source": "28f124fd66f45efac425114b8ece9102",
+      "source_label": "Dynamic GraphRAG Description",
+      "target": "410466984be6a4d817486cc0a6d86f8a",
+      "target_label": "Naive",
+      "relationship": "SELECT",
+      "confidence": 0.99
+    },
+    {
+      "source": "28f124fd66f45efac425114b8ece9102",
+      "source_label": "Dynamic GraphRAG Description",
+      "target": "347547efd8f559f294e3d65f598e6063",
+      "target_label": "GraphRAG",
+      "relationship": "SELECT",
+      "confidence": 0.99
+    },
+    {
+      "source": "730d5214f481cedd13181d55ab00b4cf",
+      "source_label": "○ Page",
+      "target": "daf9f2d578a1650ce24cdfeef2dd9a4a",
+      "target_label": "○ Graph",
+      "relationship": "○",
+      "confidence": 0.99
+    },
+    {
+      "source": "331c51e21c9d9021f370c813efc7d28e",
+      "source_label": "chunk",
+      "target": "cd14eea92f3b2f46655b7e244993ecfb",
+      "target_label": "Safety Explainable",
+      "relationship": "SUPPORTS",
+      "confidence": 0.99
+    },
+    {
+      "source": "331c51e21c9d9021f370c813efc7d28e",
+      "source_label": "chunk",
+      "target": "347547efd8f559f294e3d65f598e6063",
+      "target_label": "GraphRAG",
+      "relationship": "SUPPORTS",
+      "confidence": 0.99
+    },
+    {
+      "source": "6689f6d6c43259f6461a97ee68f08654",
+      "source_label": "Multimodal GraphRAG",
+      "target": "347547efd8f559f294e3d65f598e6063",
+      "target_label": "GraphRAG",
+      "relationship": "RETRIEVES",
+      "confidence": 0.98
+    },
+    {
+      "source": "6689f6d6c43259f6461a97ee68f08654",
+      "source_label": "Multimodal GraphRAG",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "RETRIEVES",
+      "confidence": 0.88
+    },
+    {
+      "source": "347547efd8f559f294e3d65f598e6063",
+      "source_label": "GraphRAG",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "RETRIEVES",
+      "confidence": 0.88
+    },
+    {
+      "source": "347547efd8f559f294e3d65f598e6063",
+      "source_label": "GraphRAG",
+      "target": "89ce35971a919e299a2d9d5d6b7e70f8",
+      "target_label": "Large Language Model",
+      "relationship": "CORRECT",
+      "confidence": 0.83
+    },
+    {
+      "source": "9ca59516542e8146e3371a961eef2584",
+      "source_label": "Dynamic GraphRAG",
+      "target": "347547efd8f559f294e3d65f598e6063",
+      "target_label": "GraphRAG",
+      "relationship": "SELECT",
+      "confidence": 0.83
+    },
+    {
+      "source": "9ca59516542e8146e3371a961eef2584",
+      "source_label": "Dynamic GraphRAG",
+      "target": "410466984be6a4d817486cc0a6d86f8a",
+      "target_label": "Naive",
+      "relationship": "SELECT",
+      "confidence": 0.83
+    },
+    {
+      "source": "347547efd8f559f294e3d65f598e6063",
+      "source_label": "GraphRAG",
+      "target": "410466984be6a4d817486cc0a6d86f8a",
+      "target_label": "Naive",
+      "relationship": "SELECT",
+      "confidence": 0.83
+    },
+    {
+      "source": "daf9f2d578a1650ce24cdfeef2dd9a4a",
+      "source_label": "○ Graph",
+      "target": "730d5214f481cedd13181d55ab00b4cf",
+      "target_label": "○ Page",
+      "relationship": "○",
+      "confidence": 0.83
+    },
+    {
+      "source": "cd14eea92f3b2f46655b7e244993ecfb",
+      "source_label": "Safety Explainable",
+      "target": "347547efd8f559f294e3d65f598e6063",
+      "target_label": "GraphRAG",
+      "relationship": "OVERHEAT",
+      "confidence": 0.83
+    },
+    {
+      "source": "db49b431d141eca26adeef2ad6a71420",
+      "source_label": "motor stopped because Current GraphRAG temperature exceeded the threshold, triggering the shutdown mechanism.",
+      "target": "347547efd8f559f294e3d65f598e6063",
+      "target_label": "GraphRAG",
+      "relationship": "COOL",
+      "confidence": 0.73
+    },
+    {
+      "source": "347547efd8f559f294e3d65f598e6063",
+      "source_label": "GraphRAG",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "COOL",
+      "confidence": 0.73
+    },
+    {
+      "source": "c9673c41479fc80604df20abb2158213",
+      "source_label": "Critic Agent",
+      "target": "347547efd8f559f294e3d65f598e6063",
+      "target_label": "GraphRAG",
+      "relationship": "CORRECT",
+      "confidence": 0.73
+    },
+    {
+      "source": "c9673c41479fc80604df20abb2158213",
+      "source_label": "Critic Agent",
+      "target": "89ce35971a919e299a2d9d5d6b7e70f8",
+      "target_label": "Large Language Model",
+      "relationship": "CORRECT",
+      "confidence": 0.73
+    },
+    {
+      "source": "347547efd8f559f294e3d65f598e6063",
+      "source_label": "GraphRAG",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "CORRECT",
+      "confidence": 0.73
+    },
+    {
+      "source": "95a8f462c38e306158cb5982471f81d5",
+      "source_label": "Retrieval-Augmented Generation",
+      "target": "89ce35971a919e299a2d9d5d6b7e70f8",
+      "target_label": "Large Language Model",
+      "relationship": "CORRECT",
+      "confidence": 0.73
+    },
+    {
+      "source": "c9673c41479fc80604df20abb2158213",
+      "source_label": "Critic Agent",
+      "target": "347547efd8f559f294e3d65f598e6063",
+      "target_label": "GraphRAG",
+      "relationship": "PASS",
+      "confidence": 0.73
+    },
+    {
+      "source": "347547efd8f559f294e3d65f598e6063",
+      "source_label": "GraphRAG",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "PASS",
+      "confidence": 0.73
+    },
+    {
+      "source": "9ca59516542e8146e3371a961eef2584",
+      "source_label": "Dynamic GraphRAG",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "SELECT",
+      "confidence": 0.73
+    },
+    {
+      "source": "347547efd8f559f294e3d65f598e6063",
+      "source_label": "GraphRAG",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "SELECT",
+      "confidence": 0.73
+    },
+    {
+      "source": "410466984be6a4d817486cc0a6d86f8a",
+      "source_label": "Naive",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "SELECT",
+      "confidence": 0.73
+    },
+    {
+      "source": "2c4b681a035bcc766500ab95da3a50b4",
+      "source_label": "Multi-hop Reasoning",
+      "target": "347547efd8f559f294e3d65f598e6063",
+      "target_label": "GraphRAG",
+      "relationship": "ANSWER",
+      "confidence": 0.73
+    },
+    {
+      "source": "347547efd8f559f294e3d65f598e6063",
+      "source_label": "GraphRAG",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "ANSWER",
+      "confidence": 0.73
+    },
+    {
+      "source": "347547efd8f559f294e3d65f598e6063",
+      "source_label": "GraphRAG",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "REDUCE",
+      "confidence": 0.73
+    },
+    {
+      "source": "410466984be6a4d817486cc0a6d86f8a",
+      "source_label": "Naive",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "OVERHEAT",
+      "confidence": 0.73
+    },
+    {
+      "source": "347547efd8f559f294e3d65f598e6063",
+      "source_label": "GraphRAG",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "UNDERSTAND",
+      "confidence": 0.73
+    },
+    {
+      "source": "70813576fb6c0328499db94a89ff43ba",
+      "source_label": "Graph traversal",
+      "target": "daf9f2d578a1650ce24cdfeef2dd9a4a",
+      "target_label": "○ Graph",
+      "relationship": "○",
+      "confidence": 0.73
+    },
+    {
+      "source": "70813576fb6c0328499db94a89ff43ba",
+      "source_label": "Graph traversal",
+      "target": "730d5214f481cedd13181d55ab00b4cf",
+      "target_label": "○ Page",
+      "relationship": "○",
+      "confidence": 0.73
+    },
+    {
+      "source": "daf9f2d578a1650ce24cdfeef2dd9a4a",
+      "source_label": "○ Graph",
+      "target": "331c51e21c9d9021f370c813efc7d28e",
+      "target_label": "chunk",
+      "relationship": "○",
+      "confidence": 0.73
+    },
+    {
+      "source": "730d5214f481cedd13181d55ab00b4cf",
+      "source_label": "○ Page",
+      "target": "331c51e21c9d9021f370c813efc7d28e",
+      "target_label": "chunk",
+      "relationship": "○",
+      "confidence": 0.73
+    },
+    {
+      "source": "cd14eea92f3b2f46655b7e244993ecfb",
+      "source_label": "Safety Explainable",
+      "target": "331c51e21c9d9021f370c813efc7d28e",
+      "target_label": "chunk",
+      "relationship": "OVERHEAT",
+      "confidence": 0.73
+    },
+    {
+      "source": "cd14eea92f3b2f46655b7e244993ecfb",
+      "source_label": "Safety Explainable",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "OVERHEAT",
+      "confidence": 0.73
+    },
+    {
+      "source": "347547efd8f559f294e3d65f598e6063",
+      "source_label": "GraphRAG",
+      "target": "331c51e21c9d9021f370c813efc7d28e",
+      "target_label": "chunk",
+      "relationship": "OVERHEAT",
+      "confidence": 0.73
+    },
+    {
+      "source": "347547efd8f559f294e3d65f598e6063",
+      "source_label": "GraphRAG",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "OVERHEAT",
+      "confidence": 0.73
+    },
+    {
+      "source": "db49b431d141eca26adeef2ad6a71420",
+      "source_label": "motor stopped because Current GraphRAG temperature exceeded the threshold, triggering the shutdown mechanism.",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "COOL",
+      "confidence": 0.68
+    },
+    {
+      "source": "c9673c41479fc80604df20abb2158213",
+      "source_label": "Critic Agent",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "CORRECT",
+      "confidence": 0.68
+    },
+    {
+      "source": "c9673c41479fc80604df20abb2158213",
+      "source_label": "Critic Agent",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "PASS",
+      "confidence": 0.68
+    },
+    {
+      "source": "2c4b681a035bcc766500ab95da3a50b4",
+      "source_label": "Multi-hop Reasoning",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "ANSWER",
+      "confidence": 0.68
+    },
+    {
+      "source": "70813576fb6c0328499db94a89ff43ba",
+      "source_label": "Graph traversal",
+      "target": "331c51e21c9d9021f370c813efc7d28e",
+      "target_label": "chunk",
+      "relationship": "○",
+      "confidence": 0.68
+    },
+    {
+      "source": "331c51e21c9d9021f370c813efc7d28e",
+      "source_label": "chunk",
+      "target": "95a8f462c38e306158cb5982471f81d5",
+      "target_label": "Retrieval-Augmented Generation",
+      "relationship": "OVERHEAT",
+      "confidence": 0.68
+    },
+    {
+      "source": "95a8f462c38e306158cb5982471f81d5",
+      "source_label": "Retrieval-Augmented Generation",
+      "target": "2b7f752b88dd81c48152c14ebfe2fa45",
+      "target_label": "○ Diagrams/Images",
+      "relationship": "RETRIEVES",
+      "confidence": 0.68
+    },
+    {
+      "source": "5ebfd7c52f3de9e3fcd5deb0f5807bf8",
+      "source_label": "○ Supporting",
+      "target": "cd14eea92f3b2f46655b7e244993ecfb",
+      "target_label": "Safety Explainable",
+      "relationship": "○",
+      "confidence": 0.63
+    }
+  ]
+}

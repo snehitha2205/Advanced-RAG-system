@@ -1,0 +1,99 @@
+{
+  "log_id": "query_002",
+  "timestamp": "2026-07-26T16:33:09.630509",
+  "original_question": "If a user asks a complex question involving information from text, tables, and diagrams, how would Multimodal GraphRAG process the query, and why would a traditional text-only GraphRAG fail to answer it accurately?",
+  "query_complexity": "Complex",
+  "initial_retrieval": {
+    "document_count": 3,
+    "sources": [
+      {
+        "filename": "Proposed_Extensions_-_GraphRAG_1.pdf",
+        "chunk_index": 0,
+        "relevance_score": 0.585,
+        "preview": "Proposed Extensions 1. Multimodal GraphRAG Problem: Current GraphRAG primarily retrieves information from textual content and cannot effectively utilize information present in tables, diagrams, and im..."
+      },
+      {
+        "filename": "Abstract_1.pdf",
+        "chunk_index": 0,
+        "relevance_score": 0.569,
+        "preview": "Explainable Self-Correcting Multimodal GraphRAG with Adaptive Query Routing for Intelligent Document Question Answering Abstract Retrieval-Augmented Generation (RAG) has emerged as an effective approa..."
+      },
+      {
+        "filename": "Proposed_Extensions_-_GraphRAG_1.pdf",
+        "chunk_index": 1,
+        "relevance_score": 0.564,
+        "preview": "oduce a Critic Agent after answer generation. ● Verify: ○ Is the answer supported by retrieved evidence? ○ Is any important information missing? ○ Is there any contradiction with the source documents?..."
+      }
+    ]
+  },
+  "draft_answer": "Multimodal GraphRAG processes complex questions involving information from text, tables, and diagrams by extracting and integrating data from these diverse modalities into a unified knowledge graph. A traditional text-only GraphRAG would fail to answer such questions accurately because it is limited to textual content and cannot effectively utilize information presented in non-textual formats.\n\n### How Multimodal GraphRAG Processes the Query\n\nMultimodal GraphRAG addresses complex queries by:\n1.  **Multimodal Information Extraction:** It extracts information not only from text but also from tables and diagrams/images within the documents.\n2.  **Knowledge Graph Conversion:** The extracted information from all modalities is then converted into graph nodes and relationships, forming a comprehensive knowledge graph. This allows for a structured representation of interconnected facts, regardless of their original source format.\n3.  **Cross-Modal Retrieval:** By building a knowledge graph that incorporates data from various modalities, Multimodal GraphRAG enables retrieval across these different sources. This allows the system to combine insights from, for example, a temperature reading in a table with a process flow depicted in a diagram, alongside descriptive text, to form a complete answer.\n\nFor instance, to answer a question like \"Why did the motor stop?\", Multimodal GraphRAG could combine a motor temperature value (e.g., 95°C) found in a table with a diagram illustrating a sequence like \"Motor → Cooling → Shutdown.\" This integration allows the system to deduce and answer that \"The motor stopped because its temperature exceeded the threshold, triggering the shutdown mechanism\" by combining information from both sources [Document Source 1, Chunk 0]. The system constructs this knowledge graph from document structure and content, enabling relationship-aware retrieval across various entities [Document Source 2, Chunk 0].\n\n### Why a Traditional Text-Only GraphRAG Would Fail\n\nA traditional text-only GraphRAG would fail to answer such complex, multimodal questions accurately because:\n1.  **Limited Modality Support:** Current or traditional GraphRAG primarily retrieves information from textual content. It is not designed to process or understand information embedded in tables, diagrams, or images [Document Source 1, Chunk 0].\n2.  **Incomplete Information:** If critical information required to answer a complex question is present only in a table or a diagram, a text-only GraphRAG would be unable to access or utilize it. This would lead to incomplete answers, unsupported claims, or an inability to answer the question at all.\n3.  **Inability to Perform Multimodal Reasoning:** Without the ability to integrate information across different formats, a text-only system cannot perform the necessary multi-hop reasoning that spans textual and visual/tabular data, which is often required for complex queries.\n\n### Supporting Evidence\n\n*   \"Current GraphRAG primarily retrieves information from textual content and cannot effectively utilize information present in tables, diagrams, and images.\" [Document Source 1, Chunk 0]\n*   \"Extension [for Multimodal GraphRAG]: ● Extract information from: ○ Text ○ Tables ○ Diagrams/Images ● Convert extracted information into graph nodes and relationships. ● Enable retrieval across multiple modalities.\" [Document Source 1, Chunk 0]\n*   \"Example: Motor Temp = 95°C (table) Motor → Cooling → Shutdown (diagram) The system combines information from both sources to answer: 'The motor stopped because its temperature exceeded the threshold, triggering the shutdown mechanism.'\" [Document Source 1, Chunk 0]\n*   \"The system constructs a knowledge graph from document structure and content, enabling relationship-aware retrieval across documents, chapters, sections, and semantic entities.\" [Document Source 2, Chunk 0]\n\n### Relevant Connections/Relationships\n\nThe core relationship is that Multimodal GraphRAG is an **extension** designed to overcome a significant **problem** identified in traditional GraphRAG systems: their inability to effectively utilize non-textual information. It enhances the knowledge graph construction process by incorporating data from a wider array of sources (text, tables, diagrams/images) to enable more comprehensive and accurate question answering [Document Source 1, Chunk 0].",
+  "critic_scores": {
+    "groundedness": 0.88,
+    "faithfulness": 0.88,
+    "completeness": 0.88,
+    "relevance": 0.85,
+    "graph_consistency": 0.88,
+    "citation_quality": 0.8,
+    "confidence": 0.88,
+    "decision": "PASS",
+    "reason": "Evaluated using heuristic parsing fallback.",
+    "missing_topics": [],
+    "suggested_queries": [],
+    "evaluation_time_seconds": 6.354
+  },
+  "correction_history": [
+    {
+      "step": "Draft Generated",
+      "attempt": 1,
+      "status": "Completed",
+      "description": "Initial draft generated using hybrid GraphRAG context."
+    },
+    {
+      "step": "Critic Passed",
+      "attempt": 1,
+      "status": "Fixed",
+      "description": "Answer passed critic evaluation on attempt 1 with confidence 0.88."
+    }
+  ],
+  "expanded_queries": [],
+  "final_answer": "Multimodal GraphRAG processes complex questions involving information from text, tables, and diagrams by extracting and integrating data from these diverse modalities into a unified knowledge graph. A traditional text-only GraphRAG would fail to answer such questions accurately because it is limited to textual content and cannot effectively utilize information presented in non-textual formats.\n\n### How Multimodal GraphRAG Processes the Query\n\nMultimodal GraphRAG addresses complex queries by:\n1.  **Multimodal Information Extraction:** It extracts information not only from text but also from tables and diagrams/images within the documents.\n2.  **Knowledge Graph Conversion:** The extracted information from all modalities is then converted into graph nodes and relationships, forming a comprehensive knowledge graph. This allows for a structured representation of interconnected facts, regardless of their original source format.\n3.  **Cross-Modal Retrieval:** By building a knowledge graph that incorporates data from various modalities, Multimodal GraphRAG enables retrieval across these different sources. This allows the system to combine insights from, for example, a temperature reading in a table with a process flow depicted in a diagram, alongside descriptive text, to form a complete answer.\n\nFor instance, to answer a question like \"Why did the motor stop?\", Multimodal GraphRAG could combine a motor temperature value (e.g., 95°C) found in a table with a diagram illustrating a sequence like \"Motor → Cooling → Shutdown.\" This integration allows the system to deduce and answer that \"The motor stopped because its temperature exceeded the threshold, triggering the shutdown mechanism\" by combining information from both sources [Document Source 1, Chunk 0]. The system constructs this knowledge graph from document structure and content, enabling relationship-aware retrieval across various entities [Document Source 2, Chunk 0].\n\n### Why a Traditional Text-Only GraphRAG Would Fail\n\nA traditional text-only GraphRAG would fail to answer such complex, multimodal questions accurately because:\n1.  **Limited Modality Support:** Current or traditional GraphRAG primarily retrieves information from textual content. It is not designed to process or understand information embedded in tables, diagrams, or images [Document Source 1, Chunk 0].\n2.  **Incomplete Information:** If critical information required to answer a complex question is present only in a table or a diagram, a text-only GraphRAG would be unable to access or utilize it. This would lead to incomplete answers, unsupported claims, or an inability to answer the question at all.\n3.  **Inability to Perform Multimodal Reasoning:** Without the ability to integrate information across different formats, a text-only system cannot perform the necessary multi-hop reasoning that spans textual and visual/tabular data, which is often required for complex queries.\n\n### Supporting Evidence\n\n*   \"Current GraphRAG primarily retrieves information from textual content and cannot effectively utilize information present in tables, diagrams, and images.\" [Document Source 1, Chunk 0]\n*   \"Extension [for Multimodal GraphRAG]: ● Extract information from: ○ Text ○ Tables ○ Diagrams/Images ● Convert extracted information into graph nodes and relationships. ● Enable retrieval across multiple modalities.\" [Document Source 1, Chunk 0]\n*   \"Example: Motor Temp = 95°C (table) Motor → Cooling → Shutdown (diagram) The system combines information from both sources to answer: 'The motor stopped because its temperature exceeded the threshold, triggering the shutdown mechanism.'\" [Document Source 1, Chunk 0]\n*   \"The system constructs a knowledge graph from document structure and content, enabling relationship-aware retrieval across documents, chapters, sections, and semantic entities.\" [Document Source 2, Chunk 0]\n\n### Relevant Connections/Relationships\n\nThe core relationship is that Multimodal GraphRAG is an **extension** designed to overcome a significant **problem** identified in traditional GraphRAG systems: their inability to effectively utilize non-textual information. It enhances the knowledge graph construction process by incorporating data from a wider array of sources (text, tables, diagrams/images) to enable more comprehensive and accurate question answering [Document Source 1, Chunk 0].",
+  "final_scores": {
+    "groundedness": 0.88,
+    "faithfulness": 0.88,
+    "completeness": 0.88,
+    "relevance": 0.85,
+    "graph_consistency": 0.88,
+    "citation_quality": 0.8,
+    "confidence": 0.88,
+    "decision": "PASS",
+    "reason": "Evaluated using heuristic parsing fallback.",
+    "missing_topics": [],
+    "suggested_queries": [],
+    "evaluation_time_seconds": 6.354
+  },
+  "final_status": "Verified",
+  "retry_count": 0,
+  "processing_times": {
+    "retrieval_time": 0.1,
+    "generation_time": 13.17,
+    "critic_time": 6.36,
+    "total_time": 19.63
+  },
+  "metrics": {
+    "retrieval_time_seconds": 0.1,
+    "generation_time_seconds": 13.17,
+    "critic_time_seconds": 6.36,
+    "total_response_time_seconds": 19.63,
+    "documents_retrieved": 2,
+    "chunks_retrieved": 3,
+    "graph_entities_used": 0,
+    "relationships_traversed": 2,
+    "knowledge_graph_hops": 2,
+    "context_tokens": 492,
+    "prompt_tokens": 535,
+    "completion_tokens": 790,
+    "query_complexity": "Complex",
+    "retrieval_quality_score": 0.66,
+    "retry_count": 0
+  }
+}

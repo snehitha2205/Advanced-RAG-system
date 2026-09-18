@@ -1,0 +1,303 @@
+{
+  "stage": "extraction.raw_entities",
+  "count": 37,
+  "entities": [
+    {
+      "text": "○ Diagrams/Images",
+      "label": "ORG",
+      "start": 261,
+      "end": 278,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "95",
+      "label": "CARDINAL",
+      "start": 416,
+      "end": 418,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "LLM",
+      "label": "ORG",
+      "start": 695,
+      "end": 698,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "Dynamic GraphRAG Description",
+      "label": "PERSON",
+      "start": 1227,
+      "end": 1255,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "Naive",
+      "label": "ORG",
+      "start": 1311,
+      "end": 1316,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "○ Page",
+      "label": "PERSON",
+      "start": 1881,
+      "end": 1887,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "○ Graph",
+      "label": "ORG",
+      "start": 1916,
+      "end": 1923,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "○ Supporting",
+      "label": "ORG",
+      "start": 1939,
+      "end": 1951,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "Chunk",
+      "label": "ORG",
+      "start": 1991,
+      "end": 1996,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "Safety Explainable",
+      "label": "ORG",
+      "start": 2031,
+      "end": 2049,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "GraphRAG",
+      "label": "GPE",
+      "start": 2052,
+      "end": 2060,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "Motor Fault",
+      "label": "ORG",
+      "start": 2492,
+      "end": 2503,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "The motor stopped because Current\n \nGraphRAG temperature exceeded the threshold, triggering the shutdown mechanism.",
+      "label": "PUBLICATION",
+      "start": 526,
+      "end": 641,
+      "confidence": 0.9,
+      "source": "paper_title"
+    },
+    {
+      "text": "Multimodal GraphRAG",
+      "label": "SYSTEM",
+      "start": 23,
+      "end": 42,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "multi-hop reasoning",
+      "label": "CONCEPT",
+      "start": 1441,
+      "end": 1460,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "Dynamic GraphRAG",
+      "label": "SYSTEM",
+      "start": 1227,
+      "end": 1243,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "Knowledge Graph",
+      "label": "CONCEPT",
+      "start": 2154,
+      "end": 2169,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "knowledge graph",
+      "label": "CONCEPT",
+      "start": 2207,
+      "end": 2222,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "Graph traversal",
+      "label": "CONCEPT",
+      "start": 1918,
+      "end": 1933,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "Critic Agent",
+      "label": "COMPONENT",
+      "start": 646,
+      "end": 658,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "Critic Agent",
+      "label": "COMPONENT",
+      "start": 817,
+      "end": 829,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "Critic Agent",
+      "label": "COMPONENT",
+      "start": 1120,
+      "end": 1132,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "GraphRAG",
+      "label": "SYSTEM",
+      "start": 60,
+      "end": 68,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "GraphRAG",
+      "label": "SYSTEM",
+      "start": 676,
+      "end": 684,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "GraphRAG",
+      "label": "SYSTEM",
+      "start": 1100,
+      "end": 1108,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "GraphRAG",
+      "label": "SYSTEM",
+      "start": 1325,
+      "end": 1333,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "GraphRAG",
+      "label": "SYSTEM",
+      "start": 1485,
+      "end": 1493,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "GraphRAG",
+      "label": "SYSTEM",
+      "start": 1495,
+      "end": 1503,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "GraphRAG",
+      "label": "SYSTEM",
+      "start": 1667,
+      "end": 1675,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "GraphRAG",
+      "label": "SYSTEM",
+      "start": 1691,
+      "end": 1699,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "GraphRAG",
+      "label": "SYSTEM",
+      "start": 2052,
+      "end": 2060,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "chunk",
+      "label": "CONCEPT",
+      "start": 1907,
+      "end": 1912,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "Chunk",
+      "label": "CONCEPT",
+      "start": 1991,
+      "end": 1996,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "LLM",
+      "label": "MODEL",
+      "start": 695,
+      "end": 698,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "RAG",
+      "label": "CONCEPT",
+      "start": 1317,
+      "end": 1320,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "RAG",
+      "label": "CONCEPT",
+      "start": 1619,
+      "end": 1622,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "pdf",
+      "label": "FORMAT",
+      "start": 1985,
+      "end": 1988,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    }
+  ],
+  "timestamp": "2026-09-18T15:56:35.622744+00:00"
+}

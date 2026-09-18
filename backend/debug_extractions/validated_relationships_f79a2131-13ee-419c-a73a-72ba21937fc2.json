@@ -1,0 +1,292 @@
+{
+  "stage": "extraction.validated_relationships",
+  "count": 19,
+  "relationships": [
+    {
+      "subject": "Clinical Decision Support System - Proposed Extensions Base Paper:",
+      "subject_type": "ORG",
+      "predicate": "propose",
+      "predicate_raw": "propose",
+      "object": "LLM-Based Clinical Decision Support System Integrating Biomedical",
+      "object_type": "ENTITY",
+      "confidence": 0.99,
+      "sentence": "Clinical Decision Support System - Proposed Extensions Base Paper: An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence (IEEE Access, 2025) Existing System: 1.",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "dependency_path",
+      "multi_hop": false
+    },
+    {
+      "subject": "Clinical Decision Support System - Proposed Extensions Base Paper:",
+      "subject_type": "ORG",
+      "predicate": "propose",
+      "predicate_raw": "propose",
+      "object": "Web Intelligence",
+      "object_type": "ORG",
+      "confidence": 0.99,
+      "sentence": "Clinical Decision Support System - Proposed Extensions Base Paper: An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence (IEEE Access, 2025) Existing System: 1.",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "dependency_path",
+      "multi_hop": false
+    },
+    {
+      "subject": "Clinical Decision Support System - Proposed Extensions Base Paper:",
+      "subject_type": "ORG",
+      "predicate": "propose",
+      "predicate_raw": "propose",
+      "object": "IEEE Access",
+      "object_type": "ORG",
+      "confidence": 0.99,
+      "sentence": "Clinical Decision Support System - Proposed Extensions Base Paper: An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence (IEEE Access, 2025) Existing System: 1.",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "dependency_path",
+      "multi_hop": false
+    },
+    {
+      "subject": "LLM-Based Clinical Decision Support System Integrating Biomedical",
+      "subject_type": "ENTITY",
+      "predicate": "base",
+      "predicate_raw": "base",
+      "object": "Web Intelligence",
+      "object_type": "ORG",
+      "confidence": 0.99,
+      "sentence": "Clinical Decision Support System - Proposed Extensions Base Paper: An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence (IEEE Access, 2025) Existing System: 1.",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "dependency_path",
+      "multi_hop": false
+    },
+    {
+      "subject": "LLM-Based Clinical Decision Support System Integrating Biomedical",
+      "subject_type": "ENTITY",
+      "predicate": "base",
+      "predicate_raw": "base",
+      "object": "IEEE Access",
+      "object_type": "ORG",
+      "confidence": 0.99,
+      "sentence": "Clinical Decision Support System - Proposed Extensions Base Paper: An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence (IEEE Access, 2025) Existing System: 1.",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "dependency_path",
+      "multi_hop": false
+    },
+    {
+      "subject": "Clinical Decision Support System - Proposed Extensions Base Paper:",
+      "subject_type": "ORG",
+      "predicate": "propose",
+      "predicate_raw": "propose",
+      "object": "Web Intelligence",
+      "object_type": "ORG",
+      "confidence": 0.98,
+      "sentence": "Clinical Decision Support System - Proposed Extensions Base Paper: An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence (IEEE Access, 2025) Existing System: 1.",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false
+    },
+    {
+      "subject": "Clinical Decision Support System - Proposed Extensions Base Paper:",
+      "subject_type": "ORG",
+      "predicate": "propose",
+      "predicate_raw": "propose",
+      "object": "IEEE Access",
+      "object_type": "ORG",
+      "confidence": 0.98,
+      "sentence": "Clinical Decision Support System - Proposed Extensions Base Paper: An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence (IEEE Access, 2025) Existing System: 1.",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false
+    },
+    {
+      "subject": "Clinical Decision Support System - Proposed Extensions Base Paper:",
+      "subject_type": "ORG",
+      "predicate": "propose",
+      "predicate_raw": "propose",
+      "object": "Large Language Model",
+      "object_type": "MODEL",
+      "confidence": 0.98,
+      "sentence": "Clinical Decision Support System - Proposed Extensions Base Paper: An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence (IEEE Access, 2025) Existing System: 1.",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false
+    },
+    {
+      "subject": "Web Intelligence",
+      "subject_type": "ORG",
+      "predicate": "propose",
+      "predicate_raw": "propose",
+      "object": "IEEE Access",
+      "object_type": "ORG",
+      "confidence": 0.98,
+      "sentence": "Clinical Decision Support System - Proposed Extensions Base Paper: An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence (IEEE Access, 2025) Existing System: 1.",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false
+    },
+    {
+      "subject": "Web Intelligence",
+      "subject_type": "ORG",
+      "predicate": "propose",
+      "predicate_raw": "propose",
+      "object": "Large Language Model",
+      "object_type": "MODEL",
+      "confidence": 0.98,
+      "sentence": "Clinical Decision Support System - Proposed Extensions Base Paper: An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence (IEEE Access, 2025) Existing System: 1.",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false
+    },
+    {
+      "subject": "IEEE Access",
+      "subject_type": "ORG",
+      "predicate": "propose",
+      "predicate_raw": "propose",
+      "object": "Large Language Model",
+      "object_type": "MODEL",
+      "confidence": 0.98,
+      "sentence": "Clinical Decision Support System - Proposed Extensions Base Paper: An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence (IEEE Access, 2025) Existing System: 1.",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false
+    },
+    {
+      "subject": "Clarifier",
+      "subject_type": "PERSON",
+      "predicate": "base",
+      "predicate_raw": "base",
+      "object": "CT",
+      "object_type": "ORG",
+      "confidence": 0.98,
+      "sentence": "Final Architecture Clinical Text Clarifier Agent Symptom RAG Analyzer Agent Evidence-Based Scanner Agent Clinical Data Fusion Agent Adaptive Optimizer Agent Medical Image Analysis Agent Patient Risk Prediction Agent Specialist Recommendation Agent\n\nPersonalized Treatment Pathway Agent Explainable Di",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false
+    },
+    {
+      "subject": "Clinical Decision Support System - Proposed Extensions Base Paper:",
+      "subject_type": "ORG",
+      "predicate": "propose",
+      "predicate_raw": "propose",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.88,
+      "sentence": "Clinical Decision Support System - Proposed Extensions Base Paper: An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence (IEEE Access, 2025) Existing System: 1.",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false
+    },
+    {
+      "subject": "Web Intelligence",
+      "subject_type": "ORG",
+      "predicate": "propose",
+      "predicate_raw": "propose",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.88,
+      "sentence": "Clinical Decision Support System - Proposed Extensions Base Paper: An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence (IEEE Access, 2025) Existing System: 1.",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false
+    },
+    {
+      "subject": "IEEE Access",
+      "subject_type": "ORG",
+      "predicate": "propose",
+      "predicate_raw": "propose",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.88,
+      "sentence": "Clinical Decision Support System - Proposed Extensions Base Paper: An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence (IEEE Access, 2025) Existing System: 1.",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false
+    },
+    {
+      "subject": "Retrieval-Augmented Generation",
+      "subject_type": "CONCEPT",
+      "predicate": "propose",
+      "predicate_raw": "propose",
+      "object": "Large Language Model",
+      "object_type": "MODEL",
+      "confidence": 0.88,
+      "sentence": "Clinical Decision Support System - Proposed Extensions Base Paper: An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence (IEEE Access, 2025) Existing System: 1.",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false
+    },
+    {
+      "subject": "Clarifier",
+      "subject_type": "PERSON",
+      "predicate": "base",
+      "predicate_raw": "base",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.88,
+      "sentence": "Final Architecture Clinical Text Clarifier Agent Symptom RAG Analyzer Agent Evidence-Based Scanner Agent Clinical Data Fusion Agent Adaptive Optimizer Agent Medical Image Analysis Agent Patient Risk Prediction Agent Specialist Recommendation Agent\n\nPersonalized Treatment Pathway Agent Explainable Di",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false
+    },
+    {
+      "subject": "Retrieval-Augmented Generation",
+      "subject_type": "CONCEPT",
+      "predicate": "base",
+      "predicate_raw": "base",
+      "object": "CT",
+      "object_type": "ORG",
+      "confidence": 0.88,
+      "sentence": "Final Architecture Clinical Text Clarifier Agent Symptom RAG Analyzer Agent Evidence-Based Scanner Agent Clinical Data Fusion Agent Adaptive Optimizer Agent Medical Image Analysis Agent Patient Risk Prediction Agent Specialist Recommendation Agent\n\nPersonalized Treatment Pathway Agent Explainable Di",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false
+    },
+    {
+      "subject": "Large Language Model",
+      "subject_type": "MODEL",
+      "predicate": "propose",
+      "predicate_raw": "propose",
+      "object": "Clarifier",
+      "object_type": "PERSON",
+      "confidence": 0.78,
+      "sentence": "Clinical Decision Support System - Proposed Extensions Base Paper: An Adaptive Multi-Agent LLM-Based Clinical Decision Support System Integrating Biomedical RAG and Web Intelligence (IEEE Access, 2025 Clinical Text Clarifier Agent 2.",
+      "source_documents": [
+        "f79a2131-13ee-419c-a73a-72ba21937fc2"
+      ],
+      "extraction_method": "cross_sentence",
+      "multi_hop": true
+    }
+  ],
+  "timestamp": "2026-07-26T18:12:40.613416+00:00"
+}

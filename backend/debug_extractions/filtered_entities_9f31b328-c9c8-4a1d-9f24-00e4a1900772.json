@@ -1,0 +1,176 @@
+{
+  "stage": "extraction.filtered_entities",
+  "count": 18,
+  "entities": [
+    {
+      "text": "Multimodal GraphRAG",
+      "label": "SYSTEM",
+      "start": 23,
+      "end": 42,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "GraphRAG",
+      "label": "SYSTEM",
+      "start": 60,
+      "end": 68,
+      "confidence": 0.95,
+      "source": "fused",
+      "canonical_name": "GraphRAG",
+      "aliases": [
+        "graphrag"
+      ],
+      "fusion_count": 9
+    },
+    {
+      "text": "Critic Agent",
+      "label": "COMPONENT",
+      "start": 646,
+      "end": 658,
+      "confidence": 0.95,
+      "source": "fused",
+      "canonical_name": "Critic Agent",
+      "aliases": [
+        "critic agent"
+      ],
+      "fusion_count": 3
+    },
+    {
+      "text": "LLM",
+      "label": "MODEL",
+      "start": 695,
+      "end": 698,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "Dynamic GraphRAG",
+      "label": "SYSTEM",
+      "start": 1227,
+      "end": 1243,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "RAG",
+      "label": "CONCEPT",
+      "start": 1317,
+      "end": 1320,
+      "confidence": 0.95,
+      "source": "fused",
+      "canonical_name": "RAG",
+      "aliases": [
+        "rag"
+      ],
+      "fusion_count": 2
+    },
+    {
+      "text": "multi-hop reasoning",
+      "label": "CONCEPT",
+      "start": 1441,
+      "end": 1460,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "chunk",
+      "label": "CONCEPT",
+      "start": 1907,
+      "end": 1912,
+      "confidence": 0.95,
+      "source": "fused",
+      "canonical_name": "chunk",
+      "aliases": [
+        "chunk"
+      ],
+      "fusion_count": 2
+    },
+    {
+      "text": "Graph traversal",
+      "label": "CONCEPT",
+      "start": 1918,
+      "end": 1933,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "Knowledge Graph",
+      "label": "CONCEPT",
+      "start": 2154,
+      "end": 2169,
+      "confidence": 0.95,
+      "source": "fused",
+      "canonical_name": "Knowledge Graph",
+      "aliases": [
+        "knowledge graph"
+      ],
+      "fusion_count": 2
+    },
+    {
+      "text": "The motor stopped because Current\n \nGraphRAG temperature exceeded the threshold, triggering the shutdown mechanism.",
+      "label": "PUBLICATION",
+      "start": 526,
+      "end": 641,
+      "confidence": 0.9,
+      "source": "paper_title"
+    },
+    {
+      "text": "○ Diagrams/Images",
+      "label": "ORG",
+      "start": 261,
+      "end": 278,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "Naive",
+      "label": "ORG",
+      "start": 1311,
+      "end": 1316,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "○ Page",
+      "label": "PERSON",
+      "start": 1881,
+      "end": 1887,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "○ Graph",
+      "label": "ORG",
+      "start": 1916,
+      "end": 1923,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "○ Supporting",
+      "label": "ORG",
+      "start": 1939,
+      "end": 1951,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "Safety Explainable",
+      "label": "ORG",
+      "start": 2031,
+      "end": 2049,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "Motor Fault",
+      "label": "ORG",
+      "start": 2492,
+      "end": 2503,
+      "confidence": 0.85,
+      "source": "spacy"
+    }
+  ],
+  "timestamp": "2026-09-18T15:56:35.668743+00:00"
+}

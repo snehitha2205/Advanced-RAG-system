@@ -1,0 +1,743 @@
+{
+  "stage": "extraction.normalized_relationships",
+  "count": 46,
+  "relationships": [
+    {
+      "subject": "Dynamic GraphRAG Description",
+      "subject_type": "ENTITY",
+      "predicate": "SELECT",
+      "predicate_raw": "select",
+      "object": "Naive",
+      "object_type": "ORG",
+      "confidence": 0.99,
+      "sentence": "Cascaded Dynamic GraphRAG Description: A query-routing mechanism dynamically selects between Naive RAG and GraphRAG based on query complexity.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "dependency_path",
+      "multi_hop": false,
+      "normalized_predicate": "SELECT"
+    },
+    {
+      "subject": "Dynamic GraphRAG Description",
+      "subject_type": "ENTITY",
+      "predicate": "SELECT",
+      "predicate_raw": "select",
+      "object": "GraphRAG",
+      "object_type": "SYSTEM",
+      "confidence": 0.99,
+      "sentence": "Cascaded Dynamic GraphRAG Description: A query-routing mechanism dynamically selects between Naive RAG and GraphRAG based on query complexity.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "dependency_path",
+      "multi_hop": false,
+      "normalized_predicate": "SELECT"
+    },
+    {
+      "subject": "○ Page",
+      "subject_type": "PERSON",
+      "predicate": "○",
+      "predicate_raw": "○",
+      "object": "○ Graph",
+      "object_type": "ORG",
+      "confidence": 0.99,
+      "sentence": "Source document ○ Page number ○ Retrieved chunk(s) ○ Graph traversal path",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "dependency_path",
+      "multi_hop": false,
+      "normalized_predicate": "○"
+    },
+    {
+      "subject": "chunk",
+      "subject_type": "CONCEPT",
+      "predicate": "SUPPORTS",
+      "predicate_raw": "enable",
+      "object": "Safety Explainable",
+      "object_type": "ORG",
+      "confidence": 0.99,
+      "sentence": "Battery_Manual.pdf ↓ Chunk ↓ Overheating ↓ Thermal Runaway ↓ Safety Explainable\n \nGraphRAG\n \nProblem enables users to verify the answer source and understand the reasoning process.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "dependency_path",
+      "multi_hop": false,
+      "normalized_predicate": "SUPPORTS"
+    },
+    {
+      "subject": "chunk",
+      "subject_type": "CONCEPT",
+      "predicate": "SUPPORTS",
+      "predicate_raw": "enable",
+      "object": "GraphRAG",
+      "object_type": "SYSTEM",
+      "confidence": 0.99,
+      "sentence": "Battery_Manual.pdf ↓ Chunk ↓ Overheating ↓ Thermal Runaway ↓ Safety Explainable\n \nGraphRAG\n \nProblem enables users to verify the answer source and understand the reasoning process.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "dependency_path",
+      "multi_hop": false,
+      "normalized_predicate": "SUPPORTS"
+    },
+    {
+      "subject": "Multimodal GraphRAG",
+      "subject_type": "SYSTEM",
+      "predicate": "RETRIEVES",
+      "predicate_raw": "retrieve",
+      "object": "GraphRAG",
+      "object_type": "SYSTEM",
+      "confidence": 0.98,
+      "sentence": "Multimodal GraphRAG Problem: Current GraphRAG primarily retrieves information from textual content and cannot effectively utilize information present in tables, diagrams, and images.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "RETRIEVES"
+    },
+    {
+      "subject": "Multimodal GraphRAG",
+      "subject_type": "SYSTEM",
+      "predicate": "RETRIEVES",
+      "predicate_raw": "retrieve",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.88,
+      "sentence": "Multimodal GraphRAG Problem: Current GraphRAG primarily retrieves information from textual content and cannot effectively utilize information present in tables, diagrams, and images.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "RETRIEVES"
+    },
+    {
+      "subject": "GraphRAG",
+      "subject_type": "SYSTEM",
+      "predicate": "RETRIEVES",
+      "predicate_raw": "retrieve",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.88,
+      "sentence": "Multimodal GraphRAG Problem: Current GraphRAG primarily retrieves information from textual content and cannot effectively utilize information present in tables, diagrams, and images.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "RETRIEVES"
+    },
+    {
+      "subject": "GraphRAG",
+      "subject_type": "SYSTEM",
+      "predicate": "CORRECT",
+      "predicate_raw": "correct",
+      "object": "Large Language Model",
+      "object_type": "MODEL",
+      "confidence": 0.83,
+      "sentence": "2. Critic Agent (Self-Correcting GraphRAG) Problem: LLM-generated answers may contain hallucinations, unsupported claims, or incomplete information.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "CORRECT"
+    },
+    {
+      "subject": "Dynamic GraphRAG",
+      "subject_type": "SYSTEM",
+      "predicate": "SELECT",
+      "predicate_raw": "select",
+      "object": "GraphRAG",
+      "object_type": "SYSTEM",
+      "confidence": 0.83,
+      "sentence": "Cascaded Dynamic GraphRAG Description: A query-routing mechanism dynamically selects between Naive RAG and GraphRAG based on query complexity.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "SELECT"
+    },
+    {
+      "subject": "Dynamic GraphRAG",
+      "subject_type": "SYSTEM",
+      "predicate": "SELECT",
+      "predicate_raw": "select",
+      "object": "Naive",
+      "object_type": "ORG",
+      "confidence": 0.83,
+      "sentence": "Cascaded Dynamic GraphRAG Description: A query-routing mechanism dynamically selects between Naive RAG and GraphRAG based on query complexity.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "SELECT"
+    },
+    {
+      "subject": "GraphRAG",
+      "subject_type": "SYSTEM",
+      "predicate": "SELECT",
+      "predicate_raw": "select",
+      "object": "Naive",
+      "object_type": "ORG",
+      "confidence": 0.83,
+      "sentence": "Cascaded Dynamic GraphRAG Description: A query-routing mechanism dynamically selects between Naive RAG and GraphRAG based on query complexity.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "SELECT"
+    },
+    {
+      "subject": "○ Graph",
+      "subject_type": "ORG",
+      "predicate": "○",
+      "predicate_raw": "○",
+      "object": "○ Page",
+      "object_type": "PERSON",
+      "confidence": 0.83,
+      "sentence": "Source document ○ Page number ○ Retrieved chunk(s) ○ Graph traversal path",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "○"
+    },
+    {
+      "subject": "Safety Explainable",
+      "subject_type": "ORG",
+      "predicate": "OVERHEAT",
+      "predicate_raw": "overheat",
+      "object": "GraphRAG",
+      "object_type": "SYSTEM",
+      "confidence": 0.83,
+      "sentence": "Battery_Manual.pdf ↓ Chunk ↓ Overheating ↓ Thermal Runaway ↓ Safety Explainable\n \nGraphRAG\n \nProblem enables users to verify the answer source and understand the reasoning process.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "OVERHEAT"
+    },
+    {
+      "subject": "motor stopped because Current GraphRAG temperature exceeded the threshold, triggering the shutdown mechanism.",
+      "subject_type": "PUBLICATION",
+      "predicate": "COOL",
+      "predicate_raw": "cool",
+      "object": "GraphRAG",
+      "object_type": "SYSTEM",
+      "confidence": 0.73,
+      "sentence": "Example: Motor Temp = 95°C (table) Motor → Cooling → Shutdown (diagram) Shutdown combines information from both sources to answer: \"The motor stopped because Current\n \nGraphRAG temperature exceeded the threshold, triggering the shutdown mechanism.\"",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "COOL"
+    },
+    {
+      "subject": "GraphRAG",
+      "subject_type": "SYSTEM",
+      "predicate": "COOL",
+      "predicate_raw": "cool",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.73,
+      "sentence": "Example: Motor Temp = 95°C (table) Motor → Cooling → Shutdown (diagram) Shutdown combines information from both sources to answer: \"The motor stopped because Current\n \nGraphRAG temperature exceeded the threshold, triggering the shutdown mechanism.\"",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "COOL"
+    },
+    {
+      "subject": "Critic Agent",
+      "subject_type": "COMPONENT",
+      "predicate": "CORRECT",
+      "predicate_raw": "correct",
+      "object": "GraphRAG",
+      "object_type": "SYSTEM",
+      "confidence": 0.73,
+      "sentence": "2. Critic Agent (Self-Correcting GraphRAG) Problem: LLM-generated answers may contain hallucinations, unsupported claims, or incomplete information.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "CORRECT"
+    },
+    {
+      "subject": "Critic Agent",
+      "subject_type": "COMPONENT",
+      "predicate": "CORRECT",
+      "predicate_raw": "correct",
+      "object": "Large Language Model",
+      "object_type": "MODEL",
+      "confidence": 0.73,
+      "sentence": "2. Critic Agent (Self-Correcting GraphRAG) Problem: LLM-generated answers may contain hallucinations, unsupported claims, or incomplete information.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "CORRECT"
+    },
+    {
+      "subject": "GraphRAG",
+      "subject_type": "SYSTEM",
+      "predicate": "CORRECT",
+      "predicate_raw": "correct",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.73,
+      "sentence": "2. Critic Agent (Self-Correcting GraphRAG) Problem: LLM-generated answers may contain hallucinations, unsupported claims, or incomplete information.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "CORRECT"
+    },
+    {
+      "subject": "Retrieval-Augmented Generation",
+      "subject_type": "CONCEPT",
+      "predicate": "CORRECT",
+      "predicate_raw": "correct",
+      "object": "Large Language Model",
+      "object_type": "MODEL",
+      "confidence": 0.73,
+      "sentence": "2. Critic Agent (Self-Correcting GraphRAG) Problem: LLM-generated answers may contain hallucinations, unsupported claims, or incomplete information.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "CORRECT"
+    },
+    {
+      "subject": "Critic Agent",
+      "subject_type": "COMPONENT",
+      "predicate": "PASS",
+      "predicate_raw": "pass",
+      "object": "GraphRAG",
+      "object_type": "SYSTEM",
+      "confidence": 0.73,
+      "sentence": "Workflow: Question ↓ GraphRAG ↓ Answer ↓ Critic Agent ↓ PASS / FAIL If FAIL , retrieve additional evidence and regenerate the response.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "PASS"
+    },
+    {
+      "subject": "GraphRAG",
+      "subject_type": "SYSTEM",
+      "predicate": "PASS",
+      "predicate_raw": "pass",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.73,
+      "sentence": "Workflow: Question ↓ GraphRAG ↓ Answer ↓ Critic Agent ↓ PASS / FAIL If FAIL , retrieve additional evidence and regenerate the response.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "PASS"
+    },
+    {
+      "subject": "Dynamic GraphRAG",
+      "subject_type": "SYSTEM",
+      "predicate": "SELECT",
+      "predicate_raw": "select",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.73,
+      "sentence": "Cascaded Dynamic GraphRAG Description: A query-routing mechanism dynamically selects between Naive RAG and GraphRAG based on query complexity.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "SELECT"
+    },
+    {
+      "subject": "GraphRAG",
+      "subject_type": "SYSTEM",
+      "predicate": "SELECT",
+      "predicate_raw": "select",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.73,
+      "sentence": "Cascaded Dynamic GraphRAG Description: A query-routing mechanism dynamically selects between Naive RAG and GraphRAG based on query complexity.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "SELECT"
+    },
+    {
+      "subject": "Naive",
+      "subject_type": "ORG",
+      "predicate": "SELECT",
+      "predicate_raw": "select",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.73,
+      "sentence": "Cascaded Dynamic GraphRAG Description: A query-routing mechanism dynamically selects between Naive RAG and GraphRAG based on query complexity.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "SELECT"
+    },
+    {
+      "subject": "Multi-hop Reasoning",
+      "subject_type": "CONCEPT",
+      "predicate": "ANSWER",
+      "predicate_raw": "answer",
+      "object": "GraphRAG",
+      "object_type": "SYSTEM",
+      "confidence": 0.73,
+      "sentence": "Simple factual questions are answered using lightweight vector retrieval, while multi-hop reasoning questions are routed to GraphRAG.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "ANSWER"
+    },
+    {
+      "subject": "GraphRAG",
+      "subject_type": "SYSTEM",
+      "predicate": "ANSWER",
+      "predicate_raw": "answer",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.73,
+      "sentence": "Simple factual questions are answered using lightweight vector retrieval, while multi-hop reasoning questions are routed to GraphRAG.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "ANSWER"
+    },
+    {
+      "subject": "GraphRAG",
+      "subject_type": "SYSTEM",
+      "predicate": "REDUCE",
+      "predicate_raw": "reduce",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.73,
+      "sentence": "GraphRAG reduces latency and computational cost while maintaining answer quality.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "REDUCE"
+    },
+    {
+      "subject": "Naive",
+      "subject_type": "ORG",
+      "predicate": "OVERHEAT",
+      "predicate_raw": "overheat",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.73,
+      "sentence": "→ Naive RAG Why did motor overheating cause shutdown?",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "OVERHEAT"
+    },
+    {
+      "subject": "GraphRAG",
+      "subject_type": "SYSTEM",
+      "predicate": "UNDERSTAND",
+      "predicate_raw": "understand",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.73,
+      "sentence": "Explainable GraphRAG Problem: Users cannot easily understand how Users arrived at a particular answer.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "UNDERSTAND"
+    },
+    {
+      "subject": "Graph traversal",
+      "subject_type": "CONCEPT",
+      "predicate": "○",
+      "predicate_raw": "○",
+      "object": "○ Graph",
+      "object_type": "ORG",
+      "confidence": 0.73,
+      "sentence": "Source document ○ Page number ○ Retrieved chunk(s) ○ Graph traversal path",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "○"
+    },
+    {
+      "subject": "Graph traversal",
+      "subject_type": "CONCEPT",
+      "predicate": "○",
+      "predicate_raw": "○",
+      "object": "○ Page",
+      "object_type": "PERSON",
+      "confidence": 0.73,
+      "sentence": "Source document ○ Page number ○ Retrieved chunk(s) ○ Graph traversal path",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "○"
+    },
+    {
+      "subject": "○ Graph",
+      "subject_type": "ORG",
+      "predicate": "○",
+      "predicate_raw": "○",
+      "object": "chunk",
+      "object_type": "CONCEPT",
+      "confidence": 0.73,
+      "sentence": "Source document ○ Page number ○ Retrieved chunk(s) ○ Graph traversal path",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "○"
+    },
+    {
+      "subject": "○ Page",
+      "subject_type": "PERSON",
+      "predicate": "○",
+      "predicate_raw": "○",
+      "object": "chunk",
+      "object_type": "CONCEPT",
+      "confidence": 0.73,
+      "sentence": "Source document ○ Page number ○ Retrieved chunk(s) ○ Graph traversal path",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "○"
+    },
+    {
+      "subject": "Safety Explainable",
+      "subject_type": "ORG",
+      "predicate": "OVERHEAT",
+      "predicate_raw": "overheat",
+      "object": "chunk",
+      "object_type": "CONCEPT",
+      "confidence": 0.73,
+      "sentence": "Battery_Manual.pdf ↓ Chunk ↓ Overheating ↓ Thermal Runaway ↓ Safety Explainable\n \nGraphRAG\n \nProblem enables users to verify the answer source and understand the reasoning process.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "OVERHEAT"
+    },
+    {
+      "subject": "Safety Explainable",
+      "subject_type": "ORG",
+      "predicate": "OVERHEAT",
+      "predicate_raw": "overheat",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.73,
+      "sentence": "Battery_Manual.pdf ↓ Chunk ↓ Overheating ↓ Thermal Runaway ↓ Safety Explainable\n \nGraphRAG\n \nProblem enables users to verify the answer source and understand the reasoning process.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "OVERHEAT"
+    },
+    {
+      "subject": "GraphRAG",
+      "subject_type": "SYSTEM",
+      "predicate": "OVERHEAT",
+      "predicate_raw": "overheat",
+      "object": "chunk",
+      "object_type": "CONCEPT",
+      "confidence": 0.73,
+      "sentence": "Battery_Manual.pdf ↓ Chunk ↓ Overheating ↓ Thermal Runaway ↓ Safety Explainable\n \nGraphRAG\n \nProblem enables users to verify the answer source and understand the reasoning process.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "OVERHEAT"
+    },
+    {
+      "subject": "GraphRAG",
+      "subject_type": "SYSTEM",
+      "predicate": "OVERHEAT",
+      "predicate_raw": "overheat",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.73,
+      "sentence": "Battery_Manual.pdf ↓ Chunk ↓ Overheating ↓ Thermal Runaway ↓ Safety Explainable\n \nGraphRAG\n \nProblem enables users to verify the answer source and understand the reasoning process.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "OVERHEAT"
+    },
+    {
+      "subject": "motor stopped because Current GraphRAG temperature exceeded the threshold, triggering the shutdown mechanism.",
+      "subject_type": "PUBLICATION",
+      "predicate": "COOL",
+      "predicate_raw": "cool",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.68,
+      "sentence": "Example: Motor Temp = 95°C (table) Motor → Cooling → Shutdown (diagram) Shutdown combines information from both sources to answer: \"The motor stopped because Current\n \nGraphRAG temperature exceeded the threshold, triggering the shutdown mechanism.\"",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "COOL"
+    },
+    {
+      "subject": "Critic Agent",
+      "subject_type": "COMPONENT",
+      "predicate": "CORRECT",
+      "predicate_raw": "correct",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.68,
+      "sentence": "2. Critic Agent (Self-Correcting GraphRAG) Problem: LLM-generated answers may contain hallucinations, unsupported claims, or incomplete information.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "CORRECT"
+    },
+    {
+      "subject": "Critic Agent",
+      "subject_type": "COMPONENT",
+      "predicate": "PASS",
+      "predicate_raw": "pass",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.68,
+      "sentence": "Workflow: Question ↓ GraphRAG ↓ Answer ↓ Critic Agent ↓ PASS / FAIL If FAIL , retrieve additional evidence and regenerate the response.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "PASS"
+    },
+    {
+      "subject": "Multi-hop Reasoning",
+      "subject_type": "CONCEPT",
+      "predicate": "ANSWER",
+      "predicate_raw": "answer",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.68,
+      "sentence": "Simple factual questions are answered using lightweight vector retrieval, while multi-hop reasoning questions are routed to GraphRAG.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "ANSWER"
+    },
+    {
+      "subject": "Graph traversal",
+      "subject_type": "CONCEPT",
+      "predicate": "○",
+      "predicate_raw": "○",
+      "object": "chunk",
+      "object_type": "CONCEPT",
+      "confidence": 0.68,
+      "sentence": "Source document ○ Page number ○ Retrieved chunk(s) ○ Graph traversal path",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "○"
+    },
+    {
+      "subject": "chunk",
+      "subject_type": "CONCEPT",
+      "predicate": "OVERHEAT",
+      "predicate_raw": "overheat",
+      "object": "Retrieval-Augmented Generation",
+      "object_type": "CONCEPT",
+      "confidence": 0.68,
+      "sentence": "Battery_Manual.pdf ↓ Chunk ↓ Overheating ↓ Thermal Runaway ↓ Safety Explainable\n \nGraphRAG\n \nProblem enables users to verify the answer source and understand the reasoning process.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "entity_pair",
+      "multi_hop": false,
+      "normalized_predicate": "OVERHEAT"
+    },
+    {
+      "subject": "Retrieval-Augmented Generation",
+      "subject_type": "CONCEPT",
+      "predicate": "RETRIEVES",
+      "predicate_raw": "retrieve",
+      "object": "○ Diagrams/Images",
+      "object_type": "ORG",
+      "confidence": 0.68,
+      "sentence": "Multimodal GraphRAG Problem: Current GraphRAG primarily retrieves information from textual content and cannot effectively utilize information present in tables, diagrams, and images. Extension: ● Extract information from: ○ Text ○ Tables ○ Diagrams/Images ● Convert extracted information into graph nodes and relationships.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "cross_sentence",
+      "multi_hop": true,
+      "normalized_predicate": "RETRIEVES"
+    },
+    {
+      "subject": "○ Supporting",
+      "subject_type": "ORG",
+      "predicate": "○",
+      "predicate_raw": "○",
+      "object": "Safety Explainable",
+      "object_type": "ORG",
+      "confidence": 0.63,
+      "sentence": "○ Supporting evidence Example: Battery_Manual.pdf ↓ Chunk ↓ Overheating ↓ Thermal Runaway ↓ Safety Explainable\n \nGraphRAG\n \nProblem enables users to verify the answer source and understand the reasoning process.",
+      "source_documents": [
+        "9f31b328-c9c8-4a1d-9f24-00e4a1900772"
+      ],
+      "extraction_method": "cross_sentence",
+      "multi_hop": true,
+      "normalized_predicate": "○"
+    }
+  ],
+  "timestamp": "2026-09-18T15:56:37.558816+00:00"
+}

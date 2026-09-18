@@ -1,0 +1,100 @@
+{
+  "stage": "extraction.filtered_entities",
+  "count": 11,
+  "entities": [
+    {
+      "text": "LLM",
+      "label": "MODEL",
+      "start": 91,
+      "end": 94,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "RAG",
+      "label": "CONCEPT",
+      "start": 157,
+      "end": 160,
+      "confidence": 0.95,
+      "source": "fused",
+      "canonical_name": "RAG",
+      "aliases": [
+        "rag"
+      ],
+      "fusion_count": 3
+    },
+    {
+      "text": "Confidence score",
+      "label": "METRIC",
+      "start": 1274,
+      "end": 1290,
+      "confidence": 0.95,
+      "source": "technical_dictionary"
+    },
+    {
+      "text": "Clinical Decision Support System - Proposed Extensions Base Paper:",
+      "label": "ORG",
+      "start": 0,
+      "end": 66,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "Web Intelligence",
+      "label": "ORG",
+      "start": 165,
+      "end": 181,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "IEEE Access",
+      "label": "ORG",
+      "start": 183,
+      "end": 194,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "CT",
+      "label": "ORG",
+      "start": 661,
+      "end": 663,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "Pulmonologists",
+      "label": "NORP",
+      "start": 1014,
+      "end": 1028,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "Clarifier",
+      "label": "PERSON",
+      "start": 1403,
+      "end": 1412,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "Personalized Treatment Planning 5",
+      "label": "ORG",
+      "start": 1806,
+      "end": 1839,
+      "confidence": 0.85,
+      "source": "spacy"
+    },
+    {
+      "text": "Healthcare",
+      "label": "ORG",
+      "start": 1860,
+      "end": 1870,
+      "confidence": 0.85,
+      "source": "spacy"
+    }
+  ],
+  "timestamp": "2026-07-26T18:12:39.942537+00:00"
+}

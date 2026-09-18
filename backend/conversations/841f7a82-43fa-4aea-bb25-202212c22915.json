@@ -1,0 +1,49 @@
+{
+  "id": "841f7a82-43fa-4aea-bb25-202212c22915",
+  "created_at": "2026-07-25T11:49:32.032056",
+  "updated_at": "2026-07-25T11:49:35.479236",
+  "messages": [
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-07-25T11:49:32.033056",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "I don't have enough information in the provided documents to answer this question accurately. The provided documents contain information about a resume and a case study, which do not offer a direct answer to the greeting \"hi\".",
+      "timestamp": "2026-07-25T11:49:35.479236",
+      "metadata": {
+        "sources": [
+          {
+            "filename": "Dundigela_Sai_Snehitha_Resume_.pdf",
+            "chunk_index": 0,
+            "relevance_score": 0.415,
+            "preview": "Dundigela Sai Snehitha dsaisnehitha2205@gmail.com +91 8919393161 Hyderabad, India snehitha2205 snehitha2205 Sai Snehitha Dundigela CAREER OBJECTIVE Aspiring AI and software engineer with a strong foun..."
+          },
+          {
+            "filename": "Dundigela_Sai_Snehitha_Resume_.pdf",
+            "chunk_index": 2,
+            "relevance_score": 0.408,
+            "preview": "se, Async Web Server •Hardware: ESP32, Seeed Studio XIAO ESP32, Microphone module ACHIEVEMENTS & ACTIVITIES SIH 2025 – Waitlisted for Smart India Hackathon, recognizing innovation and problem-solving...."
+          },
+          {
+            "filename": "CASE_STUDY_final.pdf",
+            "chunk_index": 19,
+            "relevance_score": 0.402,
+            "preview": "havior insights •Barcode integration for faster billing •Mobile application for managers on the go 16 Code Repository Structure The complete implementation is available in the accompanying repository...."
+          }
+        ],
+        "context_used": 3
+      }
+    }
+  ],
+  "metadata": {},
+  "context": {
+    "last_query": "hi",
+    "last_answer": "I don't have enough information in the provided documents to answer this question accurately. The provided documents contain information about a resume and a case study, which do not offer a direct answer to the greeting \"hi\".",
+    "mentioned_entities": [],
+    "current_topic": null,
+    "document_references": []
+  }
+}

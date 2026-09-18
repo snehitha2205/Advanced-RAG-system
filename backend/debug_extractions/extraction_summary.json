@@ -1,0 +1,9 @@
+{
+  "total_documents_processed": 4,
+  "total_entities": 49,
+  "total_relationships": 90,
+  "average_entities_per_document": 12.25,
+  "average_relationships_per_document": 22.5,
+  "last_processed_document": "Proposed_Extensions_-_GraphRAG_1.pdf",
+  "last_updated": "2026-09-18T15:56:41.192557+00:00"
+}

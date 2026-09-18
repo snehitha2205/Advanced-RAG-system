@@ -1,0 +1,176 @@
+{
+  "stage": "extraction.canonical_entities",
+  "count": 11,
+  "entities": [
+    {
+      "entity_id": "89ce35971a919e299a2d9d5d6b7e70f8",
+      "canonical_name": "Large Language Model",
+      "original_name": "LLM",
+      "entity_type": "MODEL",
+      "aliases": [
+        "LLM",
+        "large language model",
+        "llm"
+      ],
+      "confidence": 0.95,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "technical_dictionary",
+      "label": "MODEL",
+      "text": "Large Language Model"
+    },
+    {
+      "entity_id": "95a8f462c38e306158cb5982471f81d5",
+      "canonical_name": "Retrieval-Augmented Generation",
+      "original_name": "RAG",
+      "entity_type": "CONCEPT",
+      "aliases": [
+        "RAG",
+        "rag",
+        "retrieval-augmented generation"
+      ],
+      "confidence": 0.95,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "fused",
+      "label": "CONCEPT",
+      "text": "Retrieval-Augmented Generation"
+    },
+    {
+      "entity_id": "f45c36b287e2adf1eb85a7ff19148e82",
+      "canonical_name": "Confidence score",
+      "original_name": "Confidence score",
+      "entity_type": "METRIC",
+      "aliases": [
+        "confidence score"
+      ],
+      "confidence": 0.95,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "technical_dictionary",
+      "label": "METRIC",
+      "text": "Confidence score"
+    },
+    {
+      "entity_id": "7302e61e220874089f64fa7674d72f3c",
+      "canonical_name": "Clinical Decision Support System - Proposed Extensions Base Paper:",
+      "original_name": "Clinical Decision Support System - Proposed Extensions Base Paper:",
+      "entity_type": "ORG",
+      "aliases": [
+        "clinical decision support system - proposed extensions base paper:"
+      ],
+      "confidence": 0.85,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "spacy",
+      "label": "ORG",
+      "text": "Clinical Decision Support System - Proposed Extensions Base Paper:"
+    },
+    {
+      "entity_id": "182952d90409ab4b45e2887531508c96",
+      "canonical_name": "Web Intelligence",
+      "original_name": "Web Intelligence",
+      "entity_type": "ORG",
+      "aliases": [
+        "web intelligence"
+      ],
+      "confidence": 0.85,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "spacy",
+      "label": "ORG",
+      "text": "Web Intelligence"
+    },
+    {
+      "entity_id": "7785d6f7e2fca93d1ff9802d62ea4365",
+      "canonical_name": "IEEE Access",
+      "original_name": "IEEE Access",
+      "entity_type": "ORG",
+      "aliases": [
+        "ieee access"
+      ],
+      "confidence": 0.85,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "spacy",
+      "label": "ORG",
+      "text": "IEEE Access"
+    },
+    {
+      "entity_id": "1a1ced60fc631ab4d337a09118eed03d",
+      "canonical_name": "CT",
+      "original_name": "CT",
+      "entity_type": "ORG",
+      "aliases": [
+        "ct"
+      ],
+      "confidence": 0.85,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "spacy",
+      "label": "ORG",
+      "text": "CT"
+    },
+    {
+      "entity_id": "4b38336b5a49a7725f61c8cdaabb3fbc",
+      "canonical_name": "Pulmonologists",
+      "original_name": "Pulmonologists",
+      "entity_type": "NORP",
+      "aliases": [
+        "pulmonologists"
+      ],
+      "confidence": 0.85,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "spacy",
+      "label": "NORP",
+      "text": "Pulmonologists"
+    },
+    {
+      "entity_id": "fc8a20a074a42c5daa3c586c04d610cd",
+      "canonical_name": "Clarifier",
+      "original_name": "Clarifier",
+      "entity_type": "PERSON",
+      "aliases": [
+        "clarifier"
+      ],
+      "confidence": 0.85,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "spacy",
+      "label": "PERSON",
+      "text": "Clarifier"
+    },
+    {
+      "entity_id": "62b62b727de09329ac34467739e62ffe",
+      "canonical_name": "Personalized Treatment Planning 5",
+      "original_name": "Personalized Treatment Planning 5",
+      "entity_type": "ORG",
+      "aliases": [
+        "personalized treatment planning 5"
+      ],
+      "confidence": 0.85,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "spacy",
+      "label": "ORG",
+      "text": "Personalized Treatment Planning 5"
+    },
+    {
+      "entity_id": "0fa1d8051f2dfbfaf40f5d291867e377",
+      "canonical_name": "Healthcare",
+      "original_name": "Healthcare",
+      "entity_type": "ORG",
+      "aliases": [
+        "healthcare"
+      ],
+      "confidence": 0.85,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "spacy",
+      "label": "ORG",
+      "text": "Healthcare"
+    }
+  ],
+  "timestamp": "2026-07-26T18:07:14.335951+00:00"
+}

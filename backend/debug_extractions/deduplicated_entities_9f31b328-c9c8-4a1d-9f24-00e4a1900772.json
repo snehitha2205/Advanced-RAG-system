@@ -1,0 +1,288 @@
+{
+  "stage": "extraction.deduplicated_entities",
+  "count": 18,
+  "dedup_stats": {
+    "input_count": 18,
+    "exact_dedup_count": 0,
+    "fuzzy_dedup_count": 0,
+    "output_count": 18,
+    "duplicate_merge_rate": 0.0
+  },
+  "entities": [
+    {
+      "entity_id": "95a8f462c38e306158cb5982471f81d5",
+      "canonical_name": "Retrieval-Augmented Generation",
+      "original_name": "RAG",
+      "entity_type": "CONCEPT",
+      "aliases": [
+        "RAG",
+        "rag",
+        "retrieval-augmented generation"
+      ],
+      "confidence": 0.95,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "fused",
+      "label": "CONCEPT",
+      "text": "Retrieval-Augmented Generation"
+    },
+    {
+      "entity_id": "89ce35971a919e299a2d9d5d6b7e70f8",
+      "canonical_name": "Large Language Model",
+      "original_name": "LLM",
+      "entity_type": "MODEL",
+      "aliases": [
+        "LLM",
+        "large language model",
+        "llm"
+      ],
+      "confidence": 0.95,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "technical_dictionary",
+      "label": "MODEL",
+      "text": "Large Language Model"
+    },
+    {
+      "entity_id": "6689f6d6c43259f6461a97ee68f08654",
+      "canonical_name": "Multimodal GraphRAG",
+      "original_name": "Multimodal GraphRAG",
+      "entity_type": "SYSTEM",
+      "aliases": [
+        "multimodal graphrag"
+      ],
+      "confidence": 0.95,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "technical_dictionary",
+      "label": "SYSTEM",
+      "text": "Multimodal GraphRAG"
+    },
+    {
+      "entity_id": "2c4b681a035bcc766500ab95da3a50b4",
+      "canonical_name": "Multi-hop Reasoning",
+      "original_name": "multi-hop reasoning",
+      "entity_type": "CONCEPT",
+      "aliases": [
+        "multi-hop reasoning"
+      ],
+      "confidence": 0.95,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "technical_dictionary",
+      "label": "CONCEPT",
+      "text": "Multi-hop Reasoning"
+    },
+    {
+      "entity_id": "9ca59516542e8146e3371a961eef2584",
+      "canonical_name": "Dynamic GraphRAG",
+      "original_name": "Dynamic GraphRAG",
+      "entity_type": "SYSTEM",
+      "aliases": [
+        "dynamic graphrag"
+      ],
+      "confidence": 0.95,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "technical_dictionary",
+      "label": "SYSTEM",
+      "text": "Dynamic GraphRAG"
+    },
+    {
+      "entity_id": "70813576fb6c0328499db94a89ff43ba",
+      "canonical_name": "Graph traversal",
+      "original_name": "Graph traversal",
+      "entity_type": "CONCEPT",
+      "aliases": [
+        "graph traversal"
+      ],
+      "confidence": 0.95,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "technical_dictionary",
+      "label": "CONCEPT",
+      "text": "Graph traversal"
+    },
+    {
+      "entity_id": "39a221737ecb191d70c42a4204bb7ddf",
+      "canonical_name": "Knowledge Graph",
+      "original_name": "Knowledge Graph",
+      "entity_type": "CONCEPT",
+      "aliases": [
+        "knowledge graph"
+      ],
+      "confidence": 0.95,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "fused",
+      "label": "CONCEPT",
+      "text": "Knowledge Graph"
+    },
+    {
+      "entity_id": "c9673c41479fc80604df20abb2158213",
+      "canonical_name": "Critic Agent",
+      "original_name": "Critic Agent",
+      "entity_type": "COMPONENT",
+      "aliases": [
+        "critic agent"
+      ],
+      "confidence": 0.95,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "fused",
+      "label": "COMPONENT",
+      "text": "Critic Agent"
+    },
+    {
+      "entity_id": "347547efd8f559f294e3d65f598e6063",
+      "canonical_name": "GraphRAG",
+      "original_name": "GraphRAG",
+      "entity_type": "SYSTEM",
+      "aliases": [
+        "graphrag"
+      ],
+      "confidence": 0.95,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "fused",
+      "label": "SYSTEM",
+      "text": "GraphRAG"
+    },
+    {
+      "entity_id": "331c51e21c9d9021f370c813efc7d28e",
+      "canonical_name": "chunk",
+      "original_name": "chunk",
+      "entity_type": "CONCEPT",
+      "aliases": [],
+      "confidence": 0.95,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "fused",
+      "label": "CONCEPT",
+      "text": "chunk"
+    },
+    {
+      "entity_id": "db49b431d141eca26adeef2ad6a71420",
+      "canonical_name": "motor stopped because Current GraphRAG temperature exceeded the threshold, triggering the shutdown mechanism.",
+      "original_name": "The motor stopped because Current\n \nGraphRAG temperature exceeded the threshold, triggering the shutdown mechanism.",
+      "entity_type": "PUBLICATION",
+      "aliases": [
+        "The motor stopped because Current\n \nGraphRAG temperature exceeded the threshold, triggering the shutdown mechanism.",
+        "motor stopped because current graphrag temperature exceeded the threshold, triggering the shutdown mechanism.",
+        "the motor stopped because current\n \ngraphrag temperature exceeded the threshold, triggering the shutdown mechanism."
+      ],
+      "confidence": 0.9,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "paper_title",
+      "label": "PUBLICATION",
+      "text": "motor stopped because Current GraphRAG temperature exceeded the threshold, triggering the shutdown mechanism."
+    },
+    {
+      "entity_id": "cd14eea92f3b2f46655b7e244993ecfb",
+      "canonical_name": "Safety Explainable",
+      "original_name": "Safety Explainable",
+      "entity_type": "ORG",
+      "aliases": [
+        "safety explainable"
+      ],
+      "confidence": 0.85,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "spacy",
+      "label": "ORG",
+      "text": "Safety Explainable"
+    },
+    {
+      "entity_id": "2b7f752b88dd81c48152c14ebfe2fa45",
+      "canonical_name": "○ Diagrams/Images",
+      "original_name": "○ Diagrams/Images",
+      "entity_type": "ORG",
+      "aliases": [
+        "○ diagrams/images"
+      ],
+      "confidence": 0.85,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "spacy",
+      "label": "ORG",
+      "text": "○ Diagrams/Images"
+    },
+    {
+      "entity_id": "5ebfd7c52f3de9e3fcd5deb0f5807bf8",
+      "canonical_name": "○ Supporting",
+      "original_name": "○ Supporting",
+      "entity_type": "ORG",
+      "aliases": [
+        "○ supporting"
+      ],
+      "confidence": 0.85,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "spacy",
+      "label": "ORG",
+      "text": "○ Supporting"
+    },
+    {
+      "entity_id": "2fa38a4a9569e9c0bde15833222d7bd8",
+      "canonical_name": "Motor Fault",
+      "original_name": "Motor Fault",
+      "entity_type": "ORG",
+      "aliases": [
+        "motor fault"
+      ],
+      "confidence": 0.85,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "spacy",
+      "label": "ORG",
+      "text": "Motor Fault"
+    },
+    {
+      "entity_id": "daf9f2d578a1650ce24cdfeef2dd9a4a",
+      "canonical_name": "○ Graph",
+      "original_name": "○ Graph",
+      "entity_type": "ORG",
+      "aliases": [
+        "○ graph"
+      ],
+      "confidence": 0.85,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "spacy",
+      "label": "ORG",
+      "text": "○ Graph"
+    },
+    {
+      "entity_id": "730d5214f481cedd13181d55ab00b4cf",
+      "canonical_name": "○ Page",
+      "original_name": "○ Page",
+      "entity_type": "PERSON",
+      "aliases": [
+        "○ page"
+      ],
+      "confidence": 0.85,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "spacy",
+      "label": "PERSON",
+      "text": "○ Page"
+    },
+    {
+      "entity_id": "410466984be6a4d817486cc0a6d86f8a",
+      "canonical_name": "Naive",
+      "original_name": "Naive",
+      "entity_type": "ORG",
+      "aliases": [
+        "naive"
+      ],
+      "confidence": 0.85,
+      "frequency": 1,
+      "document_count": 1,
+      "source": "spacy",
+      "label": "ORG",
+      "text": "Naive"
+    }
+  ],
+  "timestamp": "2026-09-18T15:56:35.755744+00:00"
+}

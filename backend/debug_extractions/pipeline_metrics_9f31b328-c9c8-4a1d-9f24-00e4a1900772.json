@@ -1,0 +1,94 @@
+{
+  "stage": "extraction.metrics",
+  "metrics": {
+    "stages": [
+      {
+        "name": "text_cleaner",
+        "time_seconds": 0.008,
+        "info": "Removed 48 chars"
+      },
+      {
+        "name": "sentence_segmenter",
+        "time_seconds": 0.001,
+        "info": "16 sentences"
+      },
+      {
+        "name": "coref_resolver",
+        "time_seconds": 0.003,
+        "info": ""
+      },
+      {
+        "name": "technical_detector",
+        "time_seconds": 0.058,
+        "info": ""
+      },
+      {
+        "name": "entity_fusion",
+        "time_seconds": 0.027,
+        "info": "20 entities"
+      },
+      {
+        "name": "entity_validator",
+        "time_seconds": 0.025,
+        "info": "18 valid"
+      },
+      {
+        "name": "alias_resolver",
+        "time_seconds": 0.021,
+        "info": "18 resolved"
+      },
+      {
+        "name": "deduplicator",
+        "time_seconds": 0.044,
+        "info": "18 final"
+      },
+      {
+        "name": "relationship_extractor",
+        "time_seconds": 1.789,
+        "info": "52 raw"
+      },
+      {
+        "name": "relationship_validator",
+        "time_seconds": 0.005,
+        "info": "46 valid"
+      },
+      {
+        "name": "predicate_normalizer",
+        "time_seconds": 0.006,
+        "info": "46 normalized"
+      }
+    ],
+    "raw_entities": 37,
+    "filtered_entities": 18,
+    "canonical_entities": 18,
+    "stored_entities": 18,
+    "rejected_entities": 2,
+    "rejection_breakdown": {},
+    "duplicate_merge_rate": 0.0,
+    "average_entity_confidence": 0.9083,
+    "raw_relationships": 52,
+    "validated_relationships": 46,
+    "stored_relationships": 46,
+    "average_relationship_confidence": 0.7735,
+    "relationship_by_method": {
+      "dependency_path": 5,
+      "entity_pair": 39,
+      "cross_sentence": 2
+    },
+    "total_processing_time_seconds": 2.617,
+    "stage_times": {
+      "text_cleaner": 0.008,
+      "sentence_segmenter": 0.001,
+      "coref_resolver": 0.003,
+      "technical_detector": 0.058,
+      "entity_fusion": 0.027,
+      "entity_validator": 0.025,
+      "alias_resolver": 0.021,
+      "deduplicator": 0.044,
+      "relationship_extractor": 1.789,
+      "relationship_validator": 0.005,
+      "predicate_normalizer": 0.006
+    }
+  },
+  "timestamp": "2026-09-18T15:56:37.562746+00:00"
+}
